@@ -1,59 +1,332 @@
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0 50px;
-    background-color: #000000;
+body {
+    min-width: 320px;
+    background-color: #ffffff;
 }
 
+/* =========================
+   헤더 전체
+========================= */
+
+.header {
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+
+    /*
+        실제 배경 이미지 적용
+        파일 이름이 다르면 main_visual.jpg 부분 수정
+    */
+    background:
+        linear-gradient(rgba(0, 55, 80, 0.3),
+            rgba(0, 55, 80, 0.3)),
+        url("./image/main_visual.jpg") center center / cover no-repeat;
+
+    color: #ffffff;
+}
+
+/* 체크박스는 화면에서 숨김 */
+.menu-toggle {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* =========================
+   헤더 윗부분
+========================= */
+
+.top-bar {
+    position: relative;
+    z-index: 2;
+
+    width: calc(100% - 200px);
+    max-width: 1720px;
+    height: 110px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================
+   로고
+========================= */
+
 .logo-box {
-    filter: brightness(0) invert(100%);
+    width: 200px;
+    margin: 0;
+
+    flex-shrink: 0;
+}
+
+.logo-box a {
+    display: block;
+}
+
+.logo-box img {
+    display: block;
+
+    width: 200px;
+    height: auto;
+
+    /* 로고를 흰색으로 변경 */
+    filter: brightness(0) invert(1);
+}
+
+/* =========================
+   메인 메뉴
+========================= */
+
+.main-menu {
+    width: 870px;
+    height: 110px;
 }
 
 .menu-list {
-    display: flex;
-    gap: 40px;
-}
+    width: 100%;
+    height: 100%;
 
-.menu-list a {
-    color: #000000;
-    font-size: 18px;
-    font-weight: 700;
-    transition: color 0.3s;
-}
-
-.menu-list a:hover {
-    color: #fffb00;
-}
-
-.user-box {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: space-between;
+}
+
+.menu-list>li {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+/* 메인 메뉴 공통 스타일 */
+.main-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+/* 메뉴에 마우스를 올렸을 때 */
+.main-menu-link:hover {
+    color: #ffeb00;
+}
+
+/* =========================
+   오른쪽 버튼
+========================= */
+
+.user-box {
+    width: 207px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    flex-shrink: 0;
 }
 
 .user-box-btn {
-    background: none;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: #000000;
-    padding: 8px 16px;
-    border-radius: 20px;
+    width: 48px;
+    height: 48px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
 }
 
-/* 맨 오른쪽 동그란 파란색 전체메뉴 버튼만 다르게 꾸미기 */
+.user-box-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* SNS 글자 */
+.sns-btn {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* SVG 아이콘 */
+.icon-btn svg {
+    width: 26px;
+    height: 26px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* 파란색 전체 메뉴 버튼 */
 .menu-trigger {
-    background-color: #0046ad;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
-    font-size: 20px;
-    padding: 0;
+    border-color: #004ea2;
+    background-color: #004ea2;
+
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* 햄버거 선 */
+.menu-trigger span {
+    display: block;
+
+    width: 18px;
+    height: 2px;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+}
+
+.menu-trigger:hover {
+    border-color: #0063c9;
+    background-color: #0063c9;
+}
+
+/* =========================
+   로케이션 서브메뉴
+========================= */
+
+.location-submenu {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 90px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(0, 55, 75, 0.25);
+
+    /* 처음에는 숨김 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+}
+
+.sub-menu-list {
+    width: 1100px;
+    max-width: calc(100% - 40px);
+    height: 100%;
+
+    margin: 0 auto;
+
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+}
+
+.sub-menu-list a {
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+.sub-menu-list a:hover {
+    color: #ffeb00;
+}
+
+/* =========================
+   클릭했을 때 작동하는 부분
+========================= */
+
+/*
+    체크박스가 체크되면
+    로케이션 메뉴 글자를 노란색으로 변경
+*/
+.menu-toggle:checked~.top-bar .location-label {
+    color: #ffeb00;
+}
+
+/*
+    체크박스가 체크되면
+    서브메뉴를 화면에 표시
+*/
+.menu-toggle:checked~.location-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* =========================
+   작은 화면 임시 대응
+========================= */
+
+@media (max-width: 1400px) {
+    .top-bar {
+        width: calc(100% - 80px);
+    }
+
+    .main-menu {
+        width: 700px;
+    }
+
+    .logo-box,
+    .logo-box img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-menu {
+        display: none;
+    }
+
+    .top-bar {
+        width: calc(100% - 40px);
+    }
+
+    .location-submenu {
+        display: none;
+    }
 }

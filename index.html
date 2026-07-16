@@ -1,39 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모작</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>부산영상위원회 모작</title>
+
+    <!-- 초기화 CSS를 먼저 연결 -->
     <link rel="stylesheet" href="normal.css">
+
+    <!-- 직접 작성한 CSS를 나중에 연결 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+
+    <header class="header">
+
+        <!--
+            자바스크립트 없이 메뉴를 열기 위한 체크박스
+            화면에는 보이지 않음
+        -->
+        <input type="checkbox" id="location-toggle" class="menu-toggle">
+
+        <!-- 위쪽 헤더 -->
         <div class="top-bar">
+
+            <!-- 로고 -->
             <h1 class="logo-box">
-                <a href="#" target="_blank" title="부산영상위원회홈">
-                    <img src="./image/bfc_logo.svg" alt="bfc부산영상위원회 로고">
+                <a href="#" title="부산영상위원회 홈">
+                    <img src="./image/bfc_logo.svg" alt="BFC 부산영상위원회 로고">
                 </a>
             </h1>
-            <nav class="main-menu">
+
+            <!-- 메인 메뉴 -->
+            <nav class="main-menu" aria-label="주요 메뉴">
                 <ul class="menu-list">
-                    <li><a href="#">로케이션</a></li>
-                    <li><a href="#">지원사업</a></li>
-                    <li><a href="#">시설</a></li>
-                    <li><a href="#">알림마당</a></li>
-                    <li><a href="#">BFC소개</a></li>
+
+                    <li class="location-item">
+                        <!--
+                            label을 클릭하면 위의 checkbox가
+                            체크되거나 해제됨
+                        -->
+                        <label for="location-toggle" class="main-menu-link location-label">
+                            로케이션
+                        </label>
+                    </li>
+
+                    <li>
+                        <a href="#" class="main-menu-link">
+                            지원사업
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="main-menu-link">
+                            시설
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="main-menu-link">
+                            알림마당
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="main-menu-link">
+                            BFC소개
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
+
+            <!-- 오른쪽 버튼 -->
             <div class="user-box">
-                <button class="user-box-btn">SNS</button>
-                <button class="user-box-btn font-icon">지구본</button>
-                <button class="user-box-btn font-icon">화살표</button>
-                <button class="user-box-btn menu-trigger">☰</button>
+
+                <button type="button" class="user-box-btn sns-btn" aria-label="SNS 메뉴">
+                    SNS
+                </button>
+
+                <button type="button" class="user-box-btn icon-btn" aria-label="언어 선택">
+                    <!-- 지구본 아이콘 -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M3 12h18"></path>
+                        <path d="M12 3c3 3 4.5 6 4.5 9S15 18 12 21"></path>
+                        <path d="M12 3c-3 3-4.5 6-4.5 9S9 18 12 21"></path>
+                    </svg>
+                </button>
+
+                <button type="button" class="user-box-btn icon-btn" aria-label="로그인">
+                    <!-- 로그인 아이콘 -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M10 5H5v14h5"></path>
+                        <path d="M13 8l4 4-4 4"></path>
+                        <path d="M17 12H9"></path>
+                    </svg>
+                </button>
+
+                <button type="button" class="user-box-btn menu-trigger" aria-label="전체 메뉴">
+                    <!-- 햄버거 메뉴 아이콘 -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
             </div>
+
+        </div>
+
+        <!-- 로케이션 서브메뉴 -->
+        <div class="location-submenu">
+            <ul class="sub-menu-list">
+                <li>
+                    <a href="#">로케이션 지원/신청</a>
+                </li>
+
+                <li>
+                    <a href="#">로케이션 DB</a>
+                </li>
+
+                <li>
+                    <a href="#">씨네맵</a>
+                </li>
+
+                <li>
+                    <a href="#">로케이션 지원작</a>
+                </li>
+
+                <li>
+                    <a href="#">영화 속 부산</a>
+                </li>
+            </ul>
+        </div>
+
     </header>
-    </header>
+
 </body>
 
 </html>
