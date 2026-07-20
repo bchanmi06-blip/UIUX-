@@ -3,87 +3,284 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>부산영상위원회 모작</title>
 
-    <!-- 초기화 CSS를 먼저 연결 -->
+    <!-- 초기화 CSS -->
     <link rel="stylesheet" href="normal.css">
 
-    <!-- 직접 작성한 CSS를 나중에 연결 -->
+    <!-- 직접 작성한 CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="bf-hd">
 
-        <!--
-            자바스크립트 없이 메뉴를 열기 위한 체크박스
-            화면에는 보이지 않음
-        -->
-        <input type="checkbox" id="location-toggle" class="menu-toggle">
-
-        <!-- 위쪽 헤더 -->
-        <div class="top-bar">
+        <!-- 헤더 상단 -->
+        <div class="bf-top">
 
             <!-- 로고 -->
-            <h1 class="logo-box">
+            <h1 class="bf-log">
                 <a href="#" title="부산영상위원회 홈">
-                    <img src="./image/bfc_logo.svg" alt="BFC 부산영상위원회 로고">
+                    <img
+                        src="./image/bfc_logo.svg"
+                        alt="BFC 부산영상위원회 로고"
+                    >
                 </a>
             </h1>
 
-            <!-- 메인 메뉴 -->
-            <nav class="main-menu" aria-label="주요 메뉴">
-                <ul class="menu-list">
 
-                    <li class="location-item">
-                        <!--
-                            label을 클릭하면 위의 checkbox가
-                            체크되거나 해제됨
-                        -->
-                        <label for="location-toggle" class="main-menu-link location-label">
+            <!-- 1차 메뉴 -->
+            <nav class="bf-nav" aria-label="주요 메뉴">
+
+                <ul class="bf-lst">
+
+                    <!-- 로케이션 -->
+                    <li class="bf-itm">
+
+                        <a href="#" class="bf-lnk">
                             로케이션
-                        </label>
+                        </a>
+
+                        <!-- 로케이션 2차 메뉴 -->
+                        <div class="bf-sub">
+
+                            <ul class="bf-sls">
+                                <li>
+                                    <a href="#">
+                                        로케이션 지원/신청
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        로케이션 DB
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        씨네맵
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        로케이션 지원작
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        영화 속 부산
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </li>
 
-                    <li>
-                        <a href="#" class="main-menu-link">
+
+                    <!-- 지원사업 -->
+                    <li class="bf-itm">
+
+                        <a href="#" class="bf-lnk">
                             지원사업
                         </a>
+
+                        <!-- 지원사업 2차 메뉴 -->
+                        <div class="bf-sub">
+
+                            <ul class="bf-sls">
+                                <li>
+                                    <a href="#">
+                                        지원사업 안내
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        기획·개발 지원
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        제작 지원
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        프로덕션 지원
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        후반작업 지원
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </li>
 
-                    <li>
-                        <a href="#" class="main-menu-link">
+
+                    <!-- 시설 -->
+                    <li class="bf-itm">
+
+                        <a href="#" class="bf-lnk">
                             시설
                         </a>
+
+                        <!-- 시설 2차 메뉴 -->
+                        <div class="bf-sub">
+
+                            <ul class="bf-sls">
+                                <li>
+                                    <a href="#">
+                                        부산촬영스튜디오
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        영상산업센터
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        후반작업시설
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        시설 이용안내
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </li>
 
-                    <li>
-                        <a href="#" class="main-menu-link">
+
+                    <!-- 알림마당 -->
+                    <li class="bf-itm">
+
+                        <a href="#" class="bf-lnk">
                             알림마당
                         </a>
+
+                        <!-- 알림마당 2차 메뉴 -->
+                        <div class="bf-sub">
+
+                            <ul class="bf-sls">
+                                <li>
+                                    <a href="#">
+                                        전체 소식
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        공지사항
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        지원사업
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        보도자료
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </li>
 
-                    <li>
-                        <a href="#" class="main-menu-link">
+
+                    <!-- BFC 소개 -->
+                    <li class="bf-itm">
+
+                        <a href="#" class="bf-lnk">
                             BFC소개
                         </a>
+
+                        <!-- BFC소개 2차 메뉴 -->
+                        <div class="bf-sub">
+
+                            <ul class="bf-sls">
+                                <li>
+                                    <a href="#">
+                                        위원회 소개
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        주요 사업
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        조직도
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        오시는 길
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </li>
 
                 </ul>
+
             </nav>
 
-            <!-- 오른쪽 버튼 -->
-            <div class="user-box">
 
-                <button type="button" class="user-box-btn sns-btn" aria-label="SNS 메뉴">
+            <!-- 오른쪽 버튼 -->
+            <div class="bf-usr">
+
+                <!-- SNS 버튼 -->
+                <button
+                    type="button"
+                    class="bf-btn bf-sns"
+                    aria-label="SNS 메뉴"
+                >
                     SNS
                 </button>
 
-                <button type="button" class="user-box-btn icon-btn" aria-label="언어 선택">
-                    <!-- 지구본 아이콘 -->
+
+                <!-- 지구본 버튼 -->
+                <button
+                    type="button"
+                    class="bf-btn bf-ico"
+                    aria-label="언어 선택"
+                >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <circle cx="12" cy="12" r="9"></circle>
                         <path d="M3 12h18"></path>
@@ -92,8 +289,13 @@
                     </svg>
                 </button>
 
-                <button type="button" class="user-box-btn icon-btn" aria-label="로그인">
-                    <!-- 로그인 아이콘 -->
+
+                <!-- 로그인 버튼 -->
+                <button
+                    type="button"
+                    class="bf-btn bf-ico"
+                    aria-label="로그인"
+                >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M10 5H5v14h5"></path>
                         <path d="M13 8l4 4-4 4"></path>
@@ -101,8 +303,13 @@
                     </svg>
                 </button>
 
-                <button type="button" class="user-box-btn menu-trigger" aria-label="전체 메뉴">
-                    <!-- 햄버거 메뉴 아이콘 -->
+
+                <!-- 전체 메뉴 버튼 -->
+                <button
+                    type="button"
+                    class="bf-btn bf-all"
+                    aria-label="전체 메뉴"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -110,31 +317,6 @@
 
             </div>
 
-        </div>
-
-        <!-- 로케이션 서브메뉴 -->
-        <div class="location-submenu">
-            <ul class="sub-menu-list">
-                <li>
-                    <a href="#">로케이션 지원/신청</a>
-                </li>
-
-                <li>
-                    <a href="#">로케이션 DB</a>
-                </li>
-
-                <li>
-                    <a href="#">씨네맵</a>
-                </li>
-
-                <li>
-                    <a href="#">로케이션 지원작</a>
-                </li>
-
-                <li>
-                    <a href="#">영화 속 부산</a>
-                </li>
-            </ul>
         </div>
 
     </header>
