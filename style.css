@@ -1,9 +1,23 @@
 /* =========================
-   기본 설정
+   전체 기본 설정
 ========================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
 
 body {
     min-width: 1200px;
+
+    margin: 0;
 
     background-color: #ffffff;
 }
@@ -14,20 +28,18 @@ body {
 ========================= */
 
 .bf-hd {
-    position: relative;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    z-index: 100;
 
     width: 100%;
-    height: 250px;
+    height: 110px;
 
     color: #ffffff;
 
-    /*
-        배경 이미지 위에 어두운 색을 살짝 덮음
-    */
-    background:
-        linear-gradient(rgba(0, 55, 80, 0.25),
-            rgba(0, 55, 80, 0.25)),
-        url("./image/main_visual.jpg") center center / cover no-repeat;
+    background-color: transparent;
 }
 
 
@@ -43,9 +55,6 @@ body {
 
     display: grid;
 
-    /*
-        왼쪽 로고 / 가운데 메뉴 / 오른쪽 버튼
-    */
     grid-template-columns:
         300px 870px 207px;
 
@@ -60,6 +69,8 @@ body {
 
 .bf-log {
     width: 200px;
+
+    margin: 0;
 }
 
 .bf-log a {
@@ -72,9 +83,6 @@ body {
     width: 200px;
     height: auto;
 
-    /*
-        로고를 흰색으로 변경
-    */
     filter: brightness(0) invert(1);
 }
 
@@ -92,13 +100,18 @@ body {
     width: 100%;
     height: 100%;
 
+    margin: 0;
+    padding: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    list-style: none;
 }
 
 
-/* 각 1차 메뉴 */
+/* 1차 메뉴 항목 */
 
 .bf-itm {
     height: 100%;
@@ -108,7 +121,7 @@ body {
 }
 
 
-/* 1차 메뉴 글자 */
+/* 1차 메뉴 링크 */
 
 .bf-lnk {
     height: 100%;
@@ -124,6 +137,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.8px;
+    text-decoration: none;
 
     white-space: nowrap;
 
@@ -131,22 +145,16 @@ body {
 }
 
 
-/* 1차 메뉴에 마우스를 올렸을 때 */
+/* 1차 메뉴 활성화 */
 
-.bf-itm:hover>.bf-lnk {
-    color: #ffeb00;
-}
-
-
-/* 키보드로 선택했을 때도 노란색 */
-
+.bf-itm:hover>.bf-lnk,
 .bf-itm:focus-within>.bf-lnk {
     color: #ffeb00;
 }
 
 
 /* =========================
-   오른쪽 버튼
+   오른쪽 버튼 영역
 ========================= */
 
 .bf-usr {
@@ -160,11 +168,13 @@ body {
 }
 
 
-/* 모든 원형 버튼 공통 */
+/* 원형 버튼 공통 */
 
 .bf-btn {
     width: 48px;
     height: 48px;
+
+    padding: 0;
 
     display: flex;
     align-items: center;
@@ -183,15 +193,12 @@ body {
         border-color 0.2s ease;
 }
 
-
-/* 버튼에 마우스를 올렸을 때 */
-
 .bf-btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 
-/* SNS 글자 */
+/* SNS 버튼 */
 
 .bf-sns {
     font-size: 14px;
@@ -213,7 +220,7 @@ body {
 }
 
 
-/* 전체 메뉴 파란 버튼 */
+/* 전체 메뉴 버튼 */
 
 .bf-all {
     flex-direction: column;
@@ -224,9 +231,6 @@ body {
 
     background-color: #004ea2;
 }
-
-
-/* 햄버거 메뉴 선 */
 
 .bf-all span {
     display: block;
@@ -239,9 +243,6 @@ body {
     background-color: #ffffff;
 }
 
-
-/* 파란 버튼에 마우스를 올렸을 때 */
-
 .bf-all:hover {
     border-color: #0064c8;
 
@@ -250,7 +251,7 @@ body {
 
 
 /* =========================
-   2차 메뉴
+   2차 메뉴 전체 영역
 ========================= */
 
 .bf-sub {
@@ -258,19 +259,16 @@ body {
 
     top: 110px;
     left: 0;
-    z-index: 10;
+    z-index: 110;
 
     width: 100%;
-    height: 90px;
+    height: 64px;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
-    background-color: rgba(0, 70, 95, 0.28);
+    background-color: rgba(15, 58, 72, 0.28);
 
-    /*
-        처음에는 숨김
-    */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -284,19 +282,9 @@ body {
 }
 
 
-/* 1차 메뉴에 마우스를 올리면 2차 메뉴 표시 */
+/* 2차 메뉴 표시 */
 
-.bf-itm:hover>.bf-sub {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-
-    transform: translateY(0);
-}
-
-
-/* 키보드로 선택했을 때도 표시 */
-
+.bf-itm:hover>.bf-sub,
 .bf-itm:focus-within>.bf-sub {
     opacity: 1;
     visibility: visible;
@@ -311,19 +299,21 @@ body {
 ========================= */
 
 .bf-sls {
-    width: 1100px;
+    width: auto;
     max-width: calc(100% - 80px);
     height: 100%;
 
     margin: 0 auto;
+    padding: 0 40px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    gap: 90px;
+
+    list-style: none;
 }
-
-
-/* 2차 메뉴 글자 */
 
 .bf-sls a {
     display: block;
@@ -333,17 +323,128 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.8px;
+    text-decoration: none;
 
     white-space: nowrap;
 
     transition: color 0.2s ease;
 }
 
-
-/* 2차 메뉴에 마우스를 올렸을 때 */
-
-.bf-sls a:hover {
+.bf-sls a:hover,
+.bf-sls a:focus {
     color: #ffeb00;
+}
+
+
+/* =========================
+   메인 콘텐츠
+========================= */
+
+.bf-mn {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================
+   메인 비주얼
+========================= */
+
+.bf-vis {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    min-height: 760px;
+
+    overflow: hidden;
+
+    background-color: #54717d;
+}
+
+
+/* =========================
+   메인 배경 동영상
+========================= */
+
+.bf-vid {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center center;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   동영상 위 어두운 막
+========================= */
+
+.bf-dim {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 35, 55, 0.18) 0%,
+            rgba(0, 35, 55, 0.08) 55%,
+            rgba(0, 20, 35, 0.38) 100%);
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   메인 비주얼 문구
+========================= */
+
+.bf-vtx {
+    position: absolute;
+
+    left: 50%;
+    bottom: 70px;
+    z-index: 2;
+
+    width: calc(100% - 80px);
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+    text-align: center;
+}
+
+.bf-vsb {
+    margin: 0 0 24px;
+
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: -1.2px;
+}
+
+.bf-vtt {
+    margin: 0;
+
+    font-size: clamp(70px, 8vw, 155px);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -5px;
+
+    white-space: nowrap;
 }
 
 
@@ -375,7 +476,23 @@ body {
         font-size: 18px;
     }
 
+    .bf-sls {
+        max-width: calc(100% - 60px);
+
+        padding: 0 30px;
+
+        gap: 55px;
+    }
+
     .bf-sls a {
         font-size: 18px;
+    }
+
+    .bf-vsb {
+        font-size: 22px;
+    }
+
+    .bf-vtt {
+        letter-spacing: -4px;
     }
 }

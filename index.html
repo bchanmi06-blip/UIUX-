@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>부산영상위원회 모작</title>
 
@@ -20,6 +17,10 @@
 
 <body>
 
+    <!-- =========================
+         헤더
+    ========================== -->
+
     <header class="bf-hd">
 
         <!-- 헤더 상단 -->
@@ -27,16 +28,15 @@
 
             <!-- 로고 -->
             <h1 class="bf-log">
+
                 <a href="#" title="부산영상위원회 홈">
-                    <img
-                        src="./image/bfc_logo.svg"
-                        alt="BFC 부산영상위원회 로고"
-                    >
+                    <img src="./image/bfc_logo.svg" alt="BFC 부산영상위원회 로고">
                 </a>
+
             </h1>
 
 
-            <!-- 1차 메뉴 -->
+            <!-- 주요 메뉴 -->
             <nav class="bf-nav" aria-label="주요 메뉴">
 
                 <ul class="bf-lst">
@@ -52,6 +52,7 @@
                         <div class="bf-sub">
 
                             <ul class="bf-sls">
+
                                 <li>
                                     <a href="#">
                                         로케이션 지원/신청
@@ -81,6 +82,7 @@
                                         영화 속 부산
                                     </a>
                                 </li>
+
                             </ul>
 
                         </div>
@@ -99,35 +101,43 @@
                         <div class="bf-sub">
 
                             <ul class="bf-sls">
+
                                 <li>
                                     <a href="#">
-                                        지원사업 안내
+                                        기획개발
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        기획·개발 지원
+                                        투자
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        제작 지원
+                                        제작
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        프로덕션 지원
+                                        배급
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        후반작업 지원
+                                        영화영상인력·BMDB
                                     </a>
                                 </li>
+
+                                <li>
+                                    <a href="#">
+                                        글로벌
+                                    </a>
+                                </li>
+
                             </ul>
 
                         </div>
@@ -146,6 +156,7 @@
                         <div class="bf-sub">
 
                             <ul class="bf-sls">
+
                                 <li>
                                     <a href="#">
                                         부산촬영스튜디오
@@ -169,6 +180,7 @@
                                         시설 이용안내
                                     </a>
                                 </li>
+
                             </ul>
 
                         </div>
@@ -187,6 +199,7 @@
                         <div class="bf-sub">
 
                             <ul class="bf-sls">
+
                                 <li>
                                     <a href="#">
                                         전체 소식
@@ -210,6 +223,7 @@
                                         보도자료
                                     </a>
                                 </li>
+
                             </ul>
 
                         </div>
@@ -224,10 +238,11 @@
                             BFC소개
                         </a>
 
-                        <!-- BFC소개 2차 메뉴 -->
+                        <!-- BFC 소개 2차 메뉴 -->
                         <div class="bf-sub">
 
                             <ul class="bf-sls">
+
                                 <li>
                                     <a href="#">
                                         위원회 소개
@@ -251,6 +266,7 @@
                                         오시는 길
                                     </a>
                                 </li>
+
                             </ul>
 
                         </div>
@@ -266,50 +282,49 @@
             <div class="bf-usr">
 
                 <!-- SNS 버튼 -->
-                <button
-                    type="button"
-                    class="bf-btn bf-sns"
-                    aria-label="SNS 메뉴"
-                >
+                <button type="button" class="bf-btn bf-sns" aria-label="SNS 메뉴 열기">
                     SNS
                 </button>
 
 
-                <!-- 지구본 버튼 -->
-                <button
-                    type="button"
-                    class="bf-btn bf-ico"
-                    aria-label="언어 선택"
-                >
+                <!-- 언어 선택 버튼 -->
+                <button type="button" class="bf-btn bf-ico" aria-label="언어 선택">
+
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <circle cx="12" cy="12" r="9"></circle>
+
                         <path d="M3 12h18"></path>
-                        <path d="M12 3c3 3 4.5 6 4.5 9S15 18 12 21"></path>
-                        <path d="M12 3c-3 3-4.5 6-4.5 9S9 18 12 21"></path>
+
+                        <path d="
+                                M12 3
+                                c3 3 4.5 6 4.5 9
+                                S15 18 12 21
+                            "></path>
+
+                        <path d="
+                                M12 3
+                                c-3 3-4.5 6-4.5 9
+                                S9 18 12 21
+                            "></path>
                     </svg>
+
                 </button>
 
 
                 <!-- 로그인 버튼 -->
-                <button
-                    type="button"
-                    class="bf-btn bf-ico"
-                    aria-label="로그인"
-                >
+                <button type="button" class="bf-btn bf-ico" aria-label="로그인">
+
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M10 5H5v14h5"></path>
                         <path d="M13 8l4 4-4 4"></path>
                         <path d="M17 12H9"></path>
                     </svg>
+
                 </button>
 
 
                 <!-- 전체 메뉴 버튼 -->
-                <button
-                    type="button"
-                    class="bf-btn bf-all"
-                    aria-label="전체 메뉴"
-                >
+                <button type="button" class="bf-btn bf-all" aria-label="전체 메뉴 열기">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -320,6 +335,47 @@
         </div>
 
     </header>
+
+
+    <!-- =========================
+         메인 콘텐츠
+    ========================== -->
+
+    <main class="bf-mn">
+
+        <!-- 메인 비주얼 -->
+        <section class="bf-vis">
+
+            <!-- 배경 동영상 -->
+            <video class="bf-vid" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+
+                <source src="./video/bfmain.mp4" type="video/mp4">
+
+                브라우저에서 동영상을 지원하지 않습니다.
+
+            </video>
+
+
+            <!-- 영상 위 어두운 막 -->
+            <div class="bf-dim"></div>
+
+
+            <!-- 메인 문구 -->
+            <div class="bf-vtx">
+
+                <p class="bf-vsb">
+                    부산의 영화영상산업을 이끄는 힘, 부산영상위원회
+                </p>
+
+                <h2 class="bf-vtt">
+                    BUSAN FILM COMMISSION
+                </h2>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 
