@@ -437,14 +437,16 @@ body {
 }
 
 .bf-vtt {
-    margin: 0;
-
-    font-size: clamp(70px, 8vw, 155px);
-    font-weight: 800;
-    line-height: 0.9;
-    letter-spacing: -5px;
-
-    white-space: nowrap;
+    color: var(--www-daejeon-go-kr-white, var(--color-white-solid, #FFF));
+    text-align: center;
+    /* www.bfc.or.kr/Oswald/Bold */
+    font-family: var(--font-family-Font-1, Oswald);
+    font-size: var(--font-size-120, 120px);
+    font-style: normal;
+    font-weight: var(--font-weight-700, 700);
+    line-height: var(--font-size-120, 120px);
+    /* 100% */
+    letter-spacing: var(--letter-spacing--3_6, -3.6px);
 }
 
 
@@ -494,5 +496,527 @@ body {
 
     .bf-vtt {
         letter-spacing: -4px;
+    }
+}
+
+/* =========================
+   알림마당 전체
+========================= */
+
+.bf-n1 {
+    width: 100%;
+    min-height: 930px;
+
+    padding: 140px 40px;
+
+    background-color: #ffffff;
+    color: #111111;
+}
+
+
+/* 내부 정렬 */
+
+.bf-in {
+    width: 100%;
+    max-width: 1720px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1020px) 600px;
+
+    gap: 100px;
+}
+
+
+/* =========================
+   왼쪽 영역
+========================= */
+
+.bf-lf {
+    min-width: 0;
+}
+
+
+/* =========================
+   제목
+========================= */
+
+.bf-ttl {
+    width: 100%;
+}
+
+.bf-hd2 {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+/* 말풍선 숫자 */
+
+.bf-bdg {
+    position: relative;
+
+    width: 60px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* 말풍선 꼬리 */
+
+.bf-bdg::after {
+    content: "";
+
+    position: absolute;
+
+    right: 5px;
+    bottom: 1px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 14px solid #000000;
+    border-left: 12px solid transparent;
+
+    transform: rotate(15deg);
+}
+
+
+/* 알림마당 제목 */
+
+.bf-hd2 h2 {
+    margin: 15px 0 0;
+
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -4px;
+}
+
+
+/* 설명 문구 */
+
+.bf-des {
+    margin-top: 22px;
+
+    color: #555555;
+
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+
+/* =========================
+   탭 메뉴
+========================= */
+
+.bf-tab {
+    position: relative;
+
+    margin-top: 105px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* 탭 묶음 */
+
+.bf-tls {
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+}
+
+
+/* 탭 링크 */
+
+.bf-tb {
+    min-width: 120px;
+    height: 58px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #555555;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* 선택된 탭 */
+
+.bf-tb.on {
+    min-width: 155px;
+
+    border-radius: 30px;
+
+    background-color: #0759b4;
+    color: #ffffff;
+}
+
+
+/* 탭 hover */
+
+.bf-tb:not(.on):hover {
+    color: #0759b4;
+}
+
+
+/* 더보기 버튼 */
+
+.bf-add {
+    width: 58px;
+    height: 58px;
+
+    margin-left: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #0759b4;
+    border-radius: 50%;
+
+    color: #0759b4;
+
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+
+/* 좌우 화살표 */
+
+.bf-arw {
+    margin-left: auto;
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.bf-arw button,
+.bf-par button {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    color: #bbbbbb;
+
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.bf-arw button:hover,
+.bf-par button:hover {
+    border-color: #0759b4;
+    color: #0759b4;
+}
+
+
+/* =========================
+   카드 목록
+========================= */
+
+.bf-cds {
+    margin-top: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* 카드 */
+
+.bf-cd {
+    position: relative;
+
+    min-width: 0;
+    height: 357px;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    border-radius: 38px;
+
+    background-color: #f4f4f4;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.bf-cd:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* 카드 분류 */
+
+.bf-tag {
+    min-width: 98px;
+    height: 30px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #0759b4;
+    border-radius: 18px;
+
+    color: #0759b4;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bf-tag.green {
+    border-color: #62bd7d;
+    color: #62a875;
+}
+
+
+/* 카드 제목 */
+
+.bf-cdt {
+    margin: 18px 0 0;
+
+    display: -webkit-box;
+    overflow: hidden;
+
+    color: #111111;
+
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: -1.2px;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+/* 카드 설명 */
+
+.bf-cdp {
+    margin-top: 25px;
+
+    display: -webkit-box;
+    overflow: hidden;
+
+    color: #777777;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    letter-spacing: -0.7px;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+
+/* 카드 날짜 */
+
+.bf-dat {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    color: #999999;
+
+    font-size: 15px;
+}
+
+
+/* 카드 오른쪽 화살표 */
+
+.bf-go {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    color: #0759b4;
+
+    font-size: 25px;
+
+    transform: translate(20px, 20px);
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.bf-cd:hover .bf-go {
+    transform: translate(0, 0);
+
+    background-color: #0759b4;
+    color: #ffffff;
+}
+
+
+/* =========================
+   오른쪽 배너
+========================= */
+
+.bf-pop {
+    padding-top: 230px;
+}
+
+
+/* 배너 화살표 */
+
+.bf-par {
+    height: 42px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 5px;
+}
+
+.bf-par button {
+    width: 42px;
+    height: 42px;
+
+    font-size: 20px;
+}
+
+
+/* 배너 이미지 */
+
+.bf-pic {
+    display: block;
+
+    width: 600px;
+    height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 38px;
+}
+
+.bf-pic img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.bf-pic:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   작은 화면 대응
+========================= */
+
+@media (max-width: 1500px) {
+
+    .bf-n1 {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .bf-in {
+        grid-template-columns:
+            minmax(0, 1fr) 480px;
+
+        gap: 50px;
+    }
+
+    .bf-pic {
+        width: 480px;
+        height: 480px;
+    }
+
+    .bf-tab {
+        margin-top: 80px;
+    }
+
+    .bf-tb {
+        min-width: 100px;
+        padding: 0 18px;
+
+        font-size: 16px;
+    }
+
+    .bf-tb.on {
+        min-width: 130px;
+    }
+
+    .bf-cdt {
+        font-size: 20px;
+    }
+
+    .bf-cdp {
+        font-size: 15px;
     }
 }
