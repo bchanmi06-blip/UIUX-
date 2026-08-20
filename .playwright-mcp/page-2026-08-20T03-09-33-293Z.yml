@@ -1,0 +1,229 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading [level=1] [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: "#"
+          - img "BFC 부산영상위원회 로고" [ref=e6]
+      - navigation "주요 메뉴" [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "로케이션" [ref=e10] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e11]:
+            - link "지원사업" [ref=e12] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e13]:
+            - link "시설" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e15]:
+            - link "알림마당" [ref=e16] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e17]:
+            - link "BFC소개" [ref=e18] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e19]:
+        - button "SNS" [ref=e20] [cursor=pointer]
+        - button "언어 선택" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: KOR
+        - button "전체 메뉴" [ref=e24] [cursor=pointer]
+  - main [ref=e28]:
+    - generic [ref=e30]:
+      - paragraph [ref=e31]: 부산에서 영화를 만들다, 세계로 뻗어나가다
+      - heading "BUSAN FILM COMMISSION" [level=2] [ref=e32]
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - heading "01 알림마당" [level=2] [ref=e37]:
+            - generic [ref=e38]: "01"
+            - text: 알림마당
+          - paragraph [ref=e39]: 부산영상위원회의 새로운 소식을 알려드립니다.
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43] [cursor=pointer]:
+                - generic [ref=e44]: 전체 소식
+              - listitem [ref=e45] [cursor=pointer]:
+                - generic [ref=e46]: 공지사항
+              - listitem [ref=e47] [cursor=pointer]:
+                - generic [ref=e48]: 지원사업
+              - listitem [ref=e49] [cursor=pointer]:
+                - generic [ref=e50]: 보도자료
+            - link "+" [ref=e52] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e53]:
+            - button "Previous slide" [disabled]: <
+            - button "Next slide" [ref=e54] [cursor=pointer]: ">"
+        - generic [ref=e57]:
+          - group "1 / 14" [ref=e58]:
+            - generic [ref=e59]: 채용
+            - heading "부산영상위원회-직원 채용 공고" [level=2] [ref=e60]
+            - paragraph [ref=e61]: (사)부산영상위원회는 국내 최초의 영화촬영 지원 전담기구로서 함께 근무할 진취적 인재를 모집합니다.
+            - paragraph [ref=e62]: 2026.08.06
+            - generic [ref=e63]: →
+          - group "2 / 14" [ref=e64]:
+            - generic [ref=e65]: 교육
+            - heading "부산아시아영화학교 2026 부산지역 영화·영상 전문인력 양성 교육 [영화/드라마 기획·제작 ③] 수강생 모집 공고" [level=2] [ref=e66]
+            - paragraph [ref=e67]: 부산아시아영화학교 AFiS아카데미 홈페이지 오프라인강좌 내, 부산영화인교육 페이지를 통한 온라인 신청을 진행하여 주시기 바랍니다.
+            - paragraph [ref=e68]: 2026.07.21
+            - generic [ref=e69]: →
+          - group "3 / 14" [ref=e70]:
+            - generic [ref=e71]: 채용
+            - heading "부산영상위원회 직원 채용 공고 (한아세안 협력사업 담당)" [level=2] [ref=e72]
+            - paragraph [ref=e73]: 한아세안 협력사업 행정처리 및 운영 보조를 담당할 직원 2명을 모집하오니 많은 관심과 지원바랍니다.
+            - paragraph [ref=e74]: 2026.07.13
+            - generic [ref=e75]: →
+          - group "4 / 14" [ref=e76]:
+            - generic [ref=e77]: 교육
+            - heading "부산아시아영화학교 2026 전문인력 양성 교육 [OTT 시대의 극장배급과 디지털 유통] 수강생 모집 공고" [level=2] [ref=e78]
+            - paragraph [ref=e79]: 디지털 유통 및 극장 배급 분야의 실무 역량 강화를 위한 전문 교육 수강생 모집 안내입니다.
+            - paragraph [ref=e80]: 2026.07.09
+            - generic [ref=e81]: →
+          - group "5 / 14" [ref=e82]:
+            - generic [ref=e83]: 사업
+            - heading "2026 로케이션 촬영 비품 지원사업 공고" [level=2] [ref=e84]
+            - paragraph [ref=e85]: 부산 로케이션 촬영 시 원활한 촬영 환경 조성과 안전사고 예방을 도모하기 위하여 ‘로케이션 촬영 비품 지원사업’을 아래와 같이 시행합니다.
+            - paragraph [ref=e86]: 2026.07.15
+            - generic [ref=e87]: →
+          - group "6 / 14" [ref=e88]:
+            - generic [ref=e89]: 지원사업
+            - heading "2026년 버추얼프로덕션&영상제작 지원사업 선정심사 결과 공지" [level=2] [ref=e90]
+            - paragraph [ref=e91]: 버추얼프로덕션 제작지원 및 고사양 촬영장비 지원사업 최종 선정 3개 업체 결과를 공지합니다.
+            - paragraph [ref=e92]: 2026.05.29
+            - generic [ref=e93]: →
+          - group "7 / 14" [ref=e94]:
+            - generic [ref=e95]: 지원사업
+            - heading "2026 BFC 스토리 IP 공모전 사업공고" [level=2] [ref=e96]
+            - paragraph [ref=e97]: 부·울·경 우수 원천 스토리 IP 발굴 및 콘텐츠 산업 연계를 위한 공모전 안내입니다.
+            - paragraph [ref=e98]: 2026.04.20
+            - generic [ref=e99]: →
+          - group "8 / 14" [ref=e100]:
+            - generic [ref=e101]: 지원사업
+            - heading "2026년 버추얼프로덕션&영상제작 지원사업 공고" [level=2] [ref=e102]
+            - paragraph [ref=e103]: XR테크랩 시설, 특수촬영장비, 디지털 촬영장비 등 인프라 현물 제작 지원사업 공고입니다.
+            - paragraph [ref=e104]: 2026.04.16
+            - generic [ref=e105]: →
+          - group "9 / 14" [ref=e106]:
+            - generic [ref=e107]: 지원사업
+            - heading "2026 부산제작사 유통 배급 지원 사업 공고" [level=2] [ref=e108]
+            - paragraph [ref=e109]: 부산 지역 제작사의 영화 및 영상 작품 유통·배급 지원사업 공고입니다.
+            - paragraph [ref=e110]: 2026.03.23
+            - generic [ref=e111]: →
+          - group "10 / 14" [ref=e112]:
+            - generic [ref=e113]: 보도자료
+            - heading "부산영상위원회, AI 창작자 양성 첫 결실… AI 단편영화 12편 완성" [level=2] [ref=e114]
+            - paragraph [ref=e115]: 올해 첫 운영한 AI 아티스트 양성 사업(전문가 과정) 성료, 12편의 AI 단편영화 최초 공개.
+            - paragraph [ref=e116]: 2026.07.28
+            - generic [ref=e117]: →
+          - group "11 / 14" [ref=e118]:
+            - generic [ref=e119]: 보도자료
+            - heading "부산영상위원회, 상반기 촬영지원 결산 발표…지역 소비 17억 원 창출" [level=2] [ref=e120]
+            - paragraph [ref=e121]: 상반기 부산서 총 39편 촬영 완료, 스튜디오 대여일수 전년 대비 50.82% 대폭 증가.
+            - paragraph [ref=e122]: 2026.07.08
+            - generic [ref=e123]: →
+          - group "12 / 14" [ref=e124]:
+            - generic [ref=e125]: 보도자료
+            - 'heading "부산영상위원회, 지역 영화 무료 상영 ‘2026 부산영화기획전: 공감상영회’ 개최" [level=2] [ref=e126]'
+            - paragraph [ref=e127]: 부산영상위원회 제작지원작 무료 상영회 및 영화 감독과 전문가가 함께하는 씨네 공감토크 진행.
+            - paragraph [ref=e128]: 2026.07.06
+            - generic [ref=e129]: →
+          - group "13 / 14" [ref=e130]:
+            - generic [ref=e131]: 보도자료
+            - heading "부산영상위원회, 지역 스토리 IP 25편 서울서 비즈니스 매칭 나선다!" [level=2] [ref=e132]
+            - paragraph [ref=e133]: 서울 상암 중소기업 DMC타워에서 2026 BFC 스토리 IP 프로모션 데이 개최.
+            - paragraph [ref=e134]: 2026.06.29
+            - generic [ref=e135]: →
+          - group "14 / 14" [ref=e136]:
+            - generic [ref=e137]: 보도자료
+            - heading "부․울․경 우수 스토리 IP 발굴․산업화 지원… BFC 스토리 IP 공모전 개최" [level=2] [ref=e138]
+            - paragraph [ref=e139]: 총상금 7,800만 원 규모, 당선작의 실질적 사업화와 산업 연계 비즈매칭 플랫폼 운영.
+            - paragraph [ref=e140]: 2026.06.08
+            - generic [ref=e141]: →
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - button "Previous slide" [ref=e144] [cursor=pointer]: <
+          - button "Next slide" [ref=e145] [cursor=pointer]: ">"
+        - generic [ref=e148]:
+          - group "1 / 3" [ref=e149]:
+            - generic [ref=e150]:
+              - text: 공지
+              - heading "2026 부산영상위원회 상반기 로케이션 지원 안내" [level=3] [ref=e151]: 2026 부산영상위원회상반기 로케이션 지원 안내
+            - paragraph [ref=e152]: 원활한 영화·드라마 촬영 환경 조성을 위한 비품 지원 및 현장 안전 지원 사업입니다.
+          - group "2 / 3" [ref=e153]:
+            - generic [ref=e154]:
+              - text: 모집
+              - heading "부산아시아영화학교 2026 전문인력 양성 교육" [level=3] [ref=e155]: 부산아시아영화학교2026 전문인력 양성 교육
+            - paragraph [ref=e156]: 글로벌 영화/드라마 기획 제작 전문인력을 위한 과정 수강생을 모집합니다.
+          - group "3 / 3" [ref=e157]:
+            - generic [ref=e158]:
+              - text: 행사
+              - heading "2026 BFC 스토리 IP 프로모션 데이 개최" [level=3] [ref=e159]: 2026 BFC 스토리 IP프로모션 데이 개최
+            - paragraph [ref=e160]: 부·울·경 우수 원천 스토리 IP 비즈니스 매칭 행사에 참여하세요.
+    - generic [ref=e161]:
+      - generic [ref=e162]: BUSAN FILM COMMISSION
+      - generic [ref=e163]: BUSAN FILM COMMISSION
+      - generic [ref=e164]: BUSAN FILM COMMISSION
+      - generic [ref=e165]: BUSAN FILM COMMISSION
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - heading "02 주요 사업" [level=2] [ref=e169]:
+          - generic [ref=e170]: "02"
+          - text: 주요 사업
+        - paragraph [ref=e171]: 부산 영화·영상 생태계를 만들어가는 부산영상위원회의 주요 사업을 알려드립니다.
+      - generic [ref=e172]:
+        - link "로케이션 지원 국내·외 장편극영화 및 영상물 제작에 대해 촬영 장소 추천과 선정, 촬영 협의 및 인·허가 절차 등을 지원합니다. 로케이션 지원" [ref=e174] [cursor=pointer]:
+          - /url: https://location.bfc.or.kr
+          - heading "로케이션 지원" [level=2] [ref=e175]
+          - paragraph [ref=e176]:
+            - generic [ref=e177]: 국내·외 장편극영화 및 영상물 제작에 대해
+            - generic [ref=e178]: 촬영 장소 추천과 선정, 촬영 협의 및
+            - generic [ref=e179]: 인·허가 절차 등을 지원합니다.
+          - img "로케이션 지원" [ref=e181]
+        - link "기획·개발 제작지원 부산 소재 제작사의 다양한 촬영물의 기획·제작을 지원합니다. 기획·개발 제작지원" [ref=e183] [cursor=pointer]:
+          - /url: "#"
+          - heading "기획·개발 제작지원" [level=2] [ref=e184]
+          - paragraph [ref=e185]:
+            - generic [ref=e186]: 부산 소재 제작사의 다양한 촬영물의
+            - generic [ref=e187]: 기획·제작을 지원합니다.
+          - img "기획·개발 제작지원" [ref=e189]
+        - link "프로덕션 지원 부산촬영을 진행하는 촬영 제작팀에게 프로덕션 지원사업을 실시합니다. 프로덕션 지원" [ref=e191] [cursor=pointer]:
+          - /url: "#"
+          - heading "프로덕션 지원" [level=2] [ref=e192]
+          - paragraph [ref=e193]:
+            - generic [ref=e194]: 부산촬영을 진행하는 촬영 제작팀에게
+            - generic [ref=e195]: 프로덕션 지원사업을 실시합니다.
+          - img "프로덕션 지원" [ref=e197]
+        - link "후반작업 지원 믹싱, 색보정 등 후반작업에 필요한 최신 시설과 전문 인력을 지원합니다. 후반작업 지원" [ref=e199] [cursor=pointer]:
+          - /url: "#"
+          - heading "후반작업 지원" [level=2] [ref=e200]
+          - paragraph [ref=e201]:
+            - generic [ref=e202]: 믹싱, 색보정 등 후반작업에 필요한
+            - generic [ref=e203]: 최신 시설과 전문 인력을 지원합니다.
+          - img "후반작업 지원" [ref=e205]
+        - link "부산 영화·영상인력 DB BMDB는 부산지역에서 활동중인 영화·영상인 정보 제공 플랫폼입니다. 부산 영화·영상인력 DB" [ref=e207] [cursor=pointer]:
+          - /url: "#"
+          - heading "부산 영화·영상인력 DB" [level=2] [ref=e208]
+          - paragraph [ref=e209]:
+            - generic [ref=e210]: BMDB는 부산지역에서 활동중인
+            - generic [ref=e211]: 영화·영상인 정보 제공 플랫폼입니다.
+          - img "부산 영화·영상인력 DB" [ref=e213]
+  - complementary [ref=e214]:
+    - list [ref=e215]:
+      - listitem [ref=e216]:
+        - link "로케이션 DB 로케이션 DB" [ref=e217] [cursor=pointer]:
+          - /url: https://location.bfc.or.kr
+          - img "로케이션 DB" [ref=e219]
+          - generic [ref=e220]: 로케이션 DB
+      - listitem [ref=e221]:
+        - link "촬영신청 촬영신청" [ref=e222] [cursor=pointer]:
+          - /url: "#"
+          - img "촬영신청" [ref=e224]
+          - generic [ref=e225]: 촬영신청
+      - listitem [ref=e226]:
+        - link "스튜디오 신청 스튜디오 신청" [ref=e227] [cursor=pointer]:
+          - /url: "#"
+          - img "스튜디오 신청" [ref=e229]
+          - generic [ref=e230]: 스튜디오 신청
+    - generic [ref=e231] [cursor=pointer]:
+      - img "TOP 화살표" [ref=e233]
+      - paragraph [ref=e234]: TOP

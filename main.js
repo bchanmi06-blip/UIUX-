@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Swiper 카드 슬라이더 초기화 (개발자 모드 ID: noticeSwiper)
-    let cardSwiper = new Swiper('#noticeSwiper', {
+    // 1. 알림마당 Swiper 카드 슬라이더 초기화
+    const cardSwiper = new Swiper('#noticeSwiper', {
         slidesPerView: 3,
         spaceBetween: 20,
         loop: false,
@@ -27,35 +27,62 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. 알림마당 탭 메뉴 (ulBbsTab li) 클릭 이벤트
+    // 2. 알림마당 탭 필터링 이벤트
     const tabItems = document.querySelectorAll('#ulBbsTab li');
-    const tabContents = document.querySelectorAll('#noticeSwiper .tab-content');
+    const slides = document.querySelectorAll('#noticeSwiper .swiper-slide');
 
-    tabItems.forEach((tab, index) => {
+    tabItems.forEach((tab) => {
         tab.addEventListener('click', (e) => {
             e.preventDefault();
 
-            // 탭 active / on 클래스 전환
+            const targetCategory = tab.getAttribute('data-tab');
+
+            // 탭 활성화 클래스 전환
             tabItems.forEach(item => {
-                item.classList.remove('active');
-                item.classList.remove('on');
+                item.classList.remove('active', 'on');
             });
             tab.classList.add('active');
 
-            // 해당하는 tab-content 활성화 (divBbs1, divBbs2, divBbs3, divBbs4)
-            tabContents.forEach((content, cIndex) => {
-                if (index === cIndex) {
-                    content.style.display = 'flex';
-                    content.classList.add('active');
+            // 카테고리별 슬라이드 필터링
+            slides.forEach(slide => {
+                const category = slide.getAttribute('data-category');
+                if (targetCategory === 'all' || category === targetCategory) {
+                    slide.style.display = '';
                 } else {
-                    content.style.display = 'none';
-                    content.classList.remove('active');
+                    slide.style.display = 'none';
                 }
             });
 
+            // Swiper 재계산 및 첫 번째 위치로 이동
             cardSwiper.update();
             cardSwiper.slideTo(0);
         });
     });
+
+    // 3. 우측 팝업 배너 Swiper 초기화
+    const popupSwiper = new Swiper('.bf-sw2', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.m1_popup_next',
+            prevEl: '.m1_popup_prev',
+        },
+    });
+
+    // 4. 우측 퀵메뉴 TOP 버튼 스크롤 이벤트
+    const btnTop = document.getElementById('btnTop');
+    if (btnTop) {
+        btnTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 
 });

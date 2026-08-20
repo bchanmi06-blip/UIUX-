@@ -15,11 +15,10 @@ body {
 }
 
 body {
-    min-width: 1200px;
-
     margin: 0;
 
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 
@@ -497,6 +496,8 @@ body {
     .bf-vtt {
         letter-spacing: -4px;
     }
+}
+
 /* =========================
    BFC 개발자 모드 기본 변수 설정
 ========================= */
@@ -835,17 +836,19 @@ body {
 
 .text_effect {
     display: flex;
-    flex: 0 0 auto;
     flex-wrap: nowrap;
     white-space: nowrap;
     overflow: hidden;
-    transition: 0.3s;
     position: relative;
-    z-index: -1;
+    z-index: 1;
+    padding: 30px 0;
+    background-color: #f8f9fa;
 }
 
 .text_effect .text_wrap {
-    padding-right: 1.4881vw;
+    display: flex;
+    flex-shrink: 0;
+    padding-right: 60px;
     font-family: var(--engType);
     font-weight: bold;
     line-height: 1em;
@@ -855,18 +858,268 @@ body {
     font-size: 130px;
     color: #cacaca;
     will-change: transform;
-    animation: textLoop1 10s linear infinite;
+    animation: textLoop1 25s linear infinite;
 }
 
 @keyframes textLoop1 {
     0% {
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
     100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
     }
+}
+
+.m1_notice_prev.swiper-button-disabled,
+.m1_notice_next.swiper-button-disabled,
+.m1_popup_prev.swiper-button-disabled,
+.m1_popup_next.swiper-button-disabled {
+    opacity: 0.25 !important;
+    cursor: default !important;
+    pointer-events: none !important;
+}
+
+/* =========================
+   주요 사업 (main_con2, m2_business)
+========================= */
+
+.gridbox {
+    display: grid;
+}
+
+.main_con2 {
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+.m2_business {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.m2_business .box {
+    min-height: 190px;
+    padding: 35px 160px 35px 40px;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.m2_business .box .box_link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.m2_business .box h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.25em;
+    color: #222;
+    margin: 0;
+    word-break: keep-all;
+}
+
+.m2_business .box p {
+    font-size: 17px;
+    line-height: 1.45em;
+    color: #666;
+    margin-top: 16px;
+    margin-bottom: 0;
+    word-break: keep-all;
+}
+
+.m2_business .box p span {
+    display: block;
+}
+
+.m2_business .box .icon {
+    width: 110px;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.m2_business .box .icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 1번째 카드 (로케이션 지원) 세로 2줄 차지 및 배경 효과 */
+.m2_business .box:first-child {
+    grid-row: 1 / span 2;
+    padding: 45px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.m2_business .box:first-child .box_link {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.m2_business .box:first-child::after {
+    display: block;
+    content: "";
+    width: 400px;
+    height: 190px;
+    background: url("./image/business_bg.svg") center center / contain no-repeat;
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    z-index: 1;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.m2_business .box:first-child .icon {
+    width: 175px;
+    top: auto;
+    bottom: 30px;
+    right: 25px;
+    transform: translateY(0);
+}
+
+.m2_business .box:hover {
+    background-color: #f0f4f9;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 78, 162, 0.08);
+}
+
+.m2_business .box:hover .icon {
+    transform: translateY(-50%) scale(1.08);
+}
+
+.m2_business .box:first-child:hover .icon {
+    transform: translateY(-4px) scale(1.06);
+}
+
+/* =========================
+   퀵메뉴 (quick)
+========================= */
+
+.quick {
+    width: 78px;
+    position: fixed;
+    top: 220px;
+    right: 24px;
+    z-index: 799;
+    border-radius: 16px;
+    border: 1px solid var(--subColor2);
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 35, 71, 0.12);
+    transition: top 0.3s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.quick ul {
+    padding: 0 8px;
+    margin: 0;
+    list-style: none;
+    background-color: #ffffff;
+}
+
+.quick ul li {
+    border-bottom: 1px dashed #e3e3e3;
+}
+
+.quick ul li:last-child {
+    border-bottom: none;
+}
+
+.quick ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 0 12px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.quick ul li a span {
+    display: block;
+}
+
+.quick ul li a span.icon {
+    width: 100%;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick ul li a span.icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.quick ul li a span.txt {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5a5a5a;
+    line-height: 1.25em;
+    margin-top: 6px;
+    word-break: keep-all;
+    letter-spacing: -0.5px;
+}
+
+.quick ul li a:hover span.txt {
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+.quick ul li a:hover span.icon img {
+    transform: scale(1.12);
+}
+
+.quick .q_top {
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 6px;
+    cursor: pointer;
+    gap: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.quick .q_top:hover {
+    background-color: var(--subColor2);
+}
+
+.quick .q_top span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.quick .q_top span img {
+    width: 12px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.quick .q_top p {
+    margin: 0;
+    font-family: var(--engType);
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: 0.5px;
 }
 
 /* =========================
@@ -895,6 +1148,48 @@ body {
     .text_effect.color1 .text_wrap {
         font-size: 100px;
     }
+
+    .m2_business .box {
+        padding: 30px 130px 30px 30px;
+    }
+
+    .m2_business .box .icon {
+        width: 90px;
+        right: 25px;
+    }
+
+    .m2_business .box:first-child {
+        padding: 35px 30px 30px 30px;
+    }
+
+    .m2_business .box:first-child .icon {
+        width: 150px;
+        bottom: 25px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .m2_business {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .m2_business .box:first-child {
+        grid-row: auto;
+        min-height: 220px;
+        padding-right: 180px;
+    }
+
+    .m2_business .box:first-child .icon {
+        width: 130px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+    }
+
+    .m2_business .box:first-child:hover .icon {
+        transform: translateY(-50%) scale(1.08);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -914,5 +1209,41 @@ body {
 
     .text_effect.color1 .text_wrap {
         font-size: 80px;
+    }
+
+    .quick {
+        right: 10px;
+        width: 68px;
+    }
+
+    .quick ul li a span.txt {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    .m2_business {
+        grid-template-columns: 1fr;
+    }
+
+    .m2_business .box {
+        padding: 25px 120px 25px 25px;
+    }
+
+    .m2_business .box:first-child {
+        padding-right: 120px;
+    }
+
+    .m2_business .box:first-child .icon {
+        width: 95px;
+    }
+
+    .m2_business .box .icon {
+        width: 80px;
+        right: 20px;
+    }
+
+    .quick {
+        display: none; /* 모바일에서는 하단 퀵메뉴나 숨김 처리 */
     }
 }
