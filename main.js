@@ -1,5 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // 모바일 전체 메뉴
+    const menuButton = document.querySelector('.bf-all');
+    const header = document.querySelector('.bf-hd');
+
+    if (menuButton && header) {
+        menuButton.addEventListener('click', () => {
+            const isOpen = header.classList.toggle('is-menu-open');
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+            document.body.classList.toggle('menu-open', isOpen);
+        });
+
+        document.querySelectorAll('.bf-lnk').forEach((link) => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 1024) {
+                    link.parentElement.classList.toggle('is-open');
+                }
+            });
+        });
+    }
+
     // 1. 알림마당 Swiper 카드 슬라이더 초기화
     const cardSwiper = new Swiper('#noticeSwiper', {
         slidesPerView: 3,
@@ -73,6 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.m1_popup_prev',
         },
     });
+
+    // 동작 줄이기 설정을 사용하는 환경에서는 자동 재생을 멈춥니다.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        popupSwiper.autoplay.stop();
+    }
 
     // 4. 우측 퀵메뉴 TOP 버튼 스크롤 이벤트
     const btnTop = document.getElementById('btnTop');

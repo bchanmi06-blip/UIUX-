@@ -37,7 +37,7 @@
 
 
             <!-- 주요 메뉴 -->
-            <nav class="bf-nav" aria-label="주요 메뉴">
+            <nav class="bf-nav" id="mainNav" aria-label="주요 메뉴">
 
                 <ul class="bf-lst">
 
@@ -277,7 +277,7 @@
                 <button type="button" class="bf-btn bf-sns" aria-label="언어 선택">
                     <span>KOR</span>
                 </button>
-                <button type="button" class="bf-btn bf-all" aria-label="전체 메뉴">
+                <button type="button" class="bf-btn bf-all" aria-label="전체 메뉴" aria-expanded="false" aria-controls="mainNav">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -459,9 +459,7 @@
                     <div class="m1_popup_con effect-5">
                         <div class="m1_popup_slider swiper bf-sw2">
                             <div class="swiper-wrapper">
-                                <div class="box swiper-slide bf-no-img"></div>
-                                <div class="box swiper-slide bf-no-img"></div>
-                                <div class="box swiper-slide bf-no-img"></div>
+                                <div class="box swiper-slide bf-no-img" aria-label="팝업 배너 이미지 자리"></div>
                             </div>
                         </div>
                     </div>
@@ -539,6 +537,93 @@
                             <span class="icon"><img src="./image/business_icon05.png" alt="부산 영화·영상인력 DB"></span>
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN03(LOCATION) -->
+        <section class="location_section" aria-labelledby="locationTitle">
+            <div class="w_container main_con main_con3">
+                <div class="location_top">
+                    <div class="m_title location_title">
+                        <h2 class="b_tit" id="locationTitle"><span class="badge">03</span>로케이션</h2>
+                        <p class="sm_tit">부산영상위원회는 로케이션 지원사업을 통해 촬영 장소 추천 및 사진 동영상 자료를 제공하며,<br>공공시설물 촬영·답사시 필요한 인허가 절차 등을 지원합니다.</p>
+                    </div>
+                    <a class="location_search" href="https://location.bfc.or.kr" target="_blank" rel="noopener">
+                        <span>로케이션 검색 바로가기</span>
+                    </a>
+                </div>
+
+                <div class="location_grid">
+                    <div class="location_menu_grid">
+                        <article class="location_menu_card">
+                            <a href="#">
+                                <h3>신규 장소</h3>
+                                <p>부산 16개 구·군의 새로운<br>장소를 안내합니다.</p>
+                            </a>
+                        </article>
+
+                        <article class="location_menu_card">
+                            <a href="#">
+                                <h3>드론 영상</h3>
+                                <p>드론 영상을 통해<br>촬영장소를 생생하게<br>전달합니다.</p>
+                            </a>
+                        </article>
+
+                        <article class="location_menu_card location_kamco">
+                            <a href="#">
+                                <strong class="kamco_logo">캠코</strong>
+                                <h3>국유재산포털</h3>
+                                <p>캠코 국유재산포털에서<br>촬영 가능한 장소를<br>확인하세요.</p>
+                            </a>
+                        </article>
+
+                        <article class="location_menu_card location_apply">
+                            <a href="#">
+                                <h3>로케이션 지원신청<br>바로가기</h3>
+                            </a>
+                        </article>
+                    </div>
+
+                    <article class="location_feature location_feature_tall">
+                        <a href="#">
+                            <div class="location_empty" aria-label="천마산 복합전망대 이미지 자리"></div>
+                            <h3>천마산 복합전망대</h3>
+                        </a>
+                    </article>
+
+                    <article class="location_feature location_feature_circle">
+                        <a href="#">
+                            <div class="location_empty" aria-label="송강중공업 폐창고 이미지 자리"></div>
+                            <div class="location_circle_copy">
+                                <h3>(구) 송강중공업 폐창고<br>(동삼동)</h3>
+                                <p class="location_address">● 부산 영도구 해양로 207</p>
+                                <span class="location_divider"></span>
+                                <p class="location_hash">#부산폐공간&nbsp; #빈공간&nbsp; #세트같은공간<br>#송강중공업&nbsp; #영도&nbsp; #폐창고</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="location_feature location_feature_bottom">
+                        <a href="#">
+                            <div class="location_empty" aria-label="봉래나루로 이미지 자리"></div>
+                            <h3>봉래나루로</h3>
+                        </a>
+                    </article>
+
+                    <article class="location_feature location_feature_bottom">
+                        <a href="#">
+                            <div class="location_empty" aria-label="낙동아트센터 이미지 자리"></div>
+                            <h3>낙동아트센터</h3>
+                        </a>
+                    </article>
+
+                    <article class="location_feature location_feature_bottom">
+                        <a href="#">
+                            <div class="location_empty" aria-label="삼락생태공원 이미지 자리"></div>
+                            <h3>삼락생태공원</h3>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
