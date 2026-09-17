@@ -528,11 +528,17 @@ body {
     align-items: flex-end;
 }
 
+/* =========================
+   04 추천지원작 (main_con4, m4_support)
+========================= */
+
 .main_con4 {
     padding-top: 120px;
     padding-bottom: 90px;
     background: #111;
     color: #fff;
+    overflow: hidden;
+    position: relative;
 }
 
 .main_con4 .m_tit_wrap {
@@ -573,7 +579,7 @@ body {
     line-height: 1;
     color: #111;
     background: #fff;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.15);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
 }
 
 .main_con4 .m_title .b_tit .badge::after {
@@ -593,7 +599,7 @@ body {
     margin-top: 28px;
     font-size: clamp(1.05rem, 1.25vw, 1.45rem);
     line-height: 1.55;
-    color: rgba(255,255,255,0.82);
+    color: rgba(255, 255, 255, 0.82);
 }
 
 .main_con4 .m_title .sm_tit span {
@@ -609,7 +615,7 @@ body {
     align-items: center;
     gap: 16px;
     padding: 18px 26px;
-    border: 1px solid rgba(255,255,255,0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 999px;
     color: #fff;
     font-size: 1.05rem;
@@ -619,8 +625,8 @@ body {
 }
 
 .main_con4 .m_tit_btn a:hover {
-    border-color: rgba(255,255,255,0.6);
-    background: rgba(255,255,255,0.06);
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .main_con4 .m_tit_btn .arrow {
@@ -630,7 +636,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.12);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .main_con4 .m_tit_btn .arrow img {
@@ -638,10 +644,340 @@ body {
     filter: brightness(0) invert(1);
 }
 
+/* 추천지원작 비주얼 영역 (포스터 슬라이더 및 무빙 배경) */
+.m4_support {
+    height: 1160px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* 중앙 메인 포스터 카드 */
+.m4_support .poster_on {
+    width: 400px;
+    height: 570px;
+    margin: 295px auto 0;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 5px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    position: relative;
+    background: #000;
+}
+
+.m4_support .poster_on .m4_swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.m4_support .poster_on .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    background: #000;
+}
+
+.m4_support .poster_on .box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.m4_support .poster_on .box:hover img {
+    transform: scale(1.06);
+}
+
+/* 포스터 호버 시 영화 상세 정보 슬라이드 레이어 */
+.m4_support .poster_on .box .text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background: rgba(0, 0, 0, 0.78);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transition: left 0.38s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 5;
+    line-height: 1.4;
+}
+
+.m4_support .poster_on .box:hover .text {
+    left: 0;
+}
+
+.m4_support .poster_on .box .text h2 {
+    font-size: 1.85rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #fff;
+    margin: 0 0 22px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.m4_support .poster_on .box:hover .text h2 {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.15s;
+}
+
+.m4_support .poster_on .box .text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.m4_support .poster_on .box:hover .text ul {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.25s;
+}
+
+.m4_support .poster_on .box .text ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.98rem;
+}
+
+.m4_support .poster_on .box .text ul li:last-child {
+    margin-bottom: 0;
+}
+
+.m4_support .poster_on .box .text ul li .term {
+    width: 62px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: -0.05em;
+    text-align-last: justify;
+    position: relative;
+    white-space: nowrap;
+}
+
+.m4_support .poster_on .box .text ul li .term::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    width: 1px;
+    height: 12px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.m4_support .poster_on .box .text ul li .desc {
+    margin-left: 28px;
+    color: #fff;
+    font-weight: 500;
+    word-break: keep-all;
+}
+
+/* 세로형 슬라이더 인디케이터 */
+.m4_support .m4_pagination {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.m4_support .m4_pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.m4_support .m4_pagination .swiper-pagination-bullet-active {
+    height: 24px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+/* 배경 포스터 무빙 컬럼 (무한 롤링) */
+.m4_support .poster_bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2080px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 400px);
+    gap: 20px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.m4_support .poster_bg .box {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.m4_support .poster_bg .box.spacer {
+    visibility: hidden;
+}
+
+.m4_support .poster_bg .inner {
+    display: flex;
+    flex-direction: column;
+    will-change: transform;
+}
+
+.m4_support .poster_bg .inner.marquee_up {
+    animation: bgScrollUp 28s linear infinite;
+}
+
+.m4_support .poster_bg .inner.marquee_down {
+    animation: bgScrollDown 28s linear infinite;
+}
+
+@keyframes bgScrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+@keyframes bgScrollDown {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(0); }
+}
+
+.m4_support .poster_bg .inner .imgbox {
+    line-height: 0;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    filter: brightness(32%);
+    background: #111;
+}
+
+.m4_support .poster_bg .inner .imgbox img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1280px) {
+    .m4_support {
+        height: 980px;
+    }
+
+    .m4_support .poster_on {
+        width: 340px;
+        height: 485px;
+        margin: 240px auto 0;
+    }
+
+    .m4_support .poster_bg {
+        width: 1780px;
+        grid-template-columns: repeat(5, 340px);
+    }
+}
+
+@media (max-width: 960px) {
+    .m4_support {
+        height: 840px;
+    }
+
+    .m4_support .poster_on {
+        width: 300px;
+        height: 428px;
+        margin: 200px auto 0;
+        border-radius: 24px;
+    }
+
+    .m4_support .poster_on .box .text {
+        padding: 26px 20px;
+    }
+
+    .m4_support .poster_on .box .text h2 {
+        font-size: 1.4rem;
+        margin-bottom: 14px;
+    }
+
+    .m4_support .poster_on .box .text ul li {
+        font-size: 0.88rem;
+        margin-bottom: 8px;
+    }
+
+    .m4_support .poster_bg {
+        width: 1580px;
+        grid-template-columns: repeat(5, 300px);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .m4_support {
+        height: 640px;
+    }
+
+    .m4_support .poster_on {
+        width: 230px;
+        height: 328px;
+        margin: 150px auto 0;
+        border-radius: 20px;
+    }
+
+    .m4_support .poster_on .box .text {
+        padding: 16px 14px;
+    }
+
+    .m4_support .poster_on .box .text h2 {
+        font-size: 1.12rem;
+        margin-bottom: 10px;
+    }
+
+    .m4_support .poster_on .box .text ul li {
+        font-size: 0.78rem;
+        margin-bottom: 6px;
+    }
+
+    .m4_support .poster_on .box .text ul li:nth-child(n+4) {
+        display: none;
+    }
+
+    .m4_support .poster_bg {
+        width: 1190px;
+        grid-template-columns: repeat(5, 230px);
+        gap: 10px;
+    }
+}
+
+
+/* =========================
+   05 소셜 미디어 (main_con5)
+========================= */
+
 .main_con5 {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 50px;
     padding-top: 100px;
     padding-bottom: 140px;
 }
@@ -651,13 +987,16 @@ body {
     padding-right: 100px;
 }
 
+.main_con5 .m5_tag .m_title {
+    margin-bottom: 40px;
+}
+
 .main_con5 .m5_tag ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 8px;
 }
 
 .main_con5 .m5_tag ul li {
@@ -669,7 +1008,17 @@ body {
     background: #fff;
     font-size: 1rem;
     line-height: 1.2;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.06em;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.main_con5 .m5_tag ul li:hover {
+    border-color: var(--mainColor);
+    color: var(--mainColor);
+    background-color: #f0f7ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 93, 206, 0.12);
 }
 
 .main_con5 .m5_image {
@@ -688,6 +1037,14 @@ body {
     overflow: hidden;
     position: relative;
     background: #f5f5f5;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.main_con5 .m5_image .box:hover {
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14);
+    transform: translateY(-4px);
 }
 
 .main_con5 .m5_image .box:first-child {
@@ -703,12 +1060,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 0.5s ease;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .main_con5 .m5_image .box:hover img {
     transform: scale(1.08);
-    filter: brightness(55%);
+    filter: brightness(60%);
 }
 
 .main_con5 .m5_image .box:focus-within {
@@ -718,7 +1075,7 @@ body {
 
 .main_con5 .m5_image .box:focus-within img {
     transform: scale(1.08);
-    filter: brightness(55%);
+    filter: brightness(60%);
 }
 
 .main_con5 .m5_image .sr-only {
@@ -731,10 +1088,6 @@ body {
     height: 100%;
     white-space: nowrap;
     text-indent: -9999px;
-}
-
-.main_con5 .m5_tag .m_title {
-    margin-bottom: 40px;
 }
 
 .main_con5 .m5_image .box.m5_youtube_box {
@@ -822,6 +1175,52 @@ body {
         border-radius: 20px;
     }
 }
+
+/* =========================
+   하단 텍스트 흐르는 효과 (.text_effect.color2)
+========================= */
+
+.text_effect.color2 {
+    margin-top: -200px;
+    background: transparent;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.text_effect.color2 .text_wrap {
+    font-size: 160px;
+    color: #efefef;
+    will-change: transform;
+    animation: textLoop2 18s linear infinite;
+}
+
+@keyframes textLoop2 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@media (max-width: 1280px) {
+    .text_effect.color2 {
+        margin-top: -150px;
+    }
+    .text_effect.color2 .text_wrap {
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text_effect.color2 {
+        margin-top: -80px;
+    }
+    .text_effect.color2 .text_wrap {
+        font-size: 80px;
+    }
+}
+
 
 /* =========================
    제목 영역 (m_title)

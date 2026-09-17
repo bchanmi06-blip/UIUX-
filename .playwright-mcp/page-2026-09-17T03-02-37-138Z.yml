@@ -1,0 +1,646 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e4]:
+      - heading [level=1] [ref=f1e5]:
+        - link [ref=f1e6] [cursor=pointer]:
+          - /url: https://www.bfc.or.kr/
+          - img "부산영상위원회" [ref=f1e7]
+      - generic [ref=f1e8]:
+        - button [ref=f1e10] [cursor=pointer]:
+          - img "sns icon" [ref=f1e11]
+        - button [ref=f1e13] [cursor=pointer]:
+          - img "language icon" [ref=f1e14]
+        - button [ref=f1e16] [cursor=pointer]:
+          - img "login icon" [ref=f1e17]
+        - button [ref=f1e19] [cursor=pointer]:
+          - img "m_menu_open" [ref=f1e20]
+  - generic [ref=f1e21]:
+    - generic [ref=f1e23]:
+      - paragraph [ref=f1e24]: 부산의 영화영상산업을 이끄는힘, 부산영상위원회
+      - heading "BUSAN FILM COMMISSION" [level=2] [ref=f1e25]:
+        - generic [aria-hidden] [ref=f1e26]:
+          - generic [aria-hidden] [ref=f1e29]: B
+          - generic [aria-hidden] [ref=f1e32]: U
+          - generic [aria-hidden] [ref=f1e35]: S
+          - generic [aria-hidden] [ref=f1e38]: A
+          - generic [aria-hidden] [ref=f1e41]: "N"
+        - generic [aria-hidden] [ref=f1e42]:
+          - generic [aria-hidden] [ref=f1e45]: F
+          - generic [aria-hidden] [ref=f1e48]: I
+          - generic [aria-hidden] [ref=f1e51]: L
+          - generic [aria-hidden] [ref=f1e54]: M
+        - generic [aria-hidden] [ref=f1e55]:
+          - generic [aria-hidden] [ref=f1e58]: C
+          - generic [aria-hidden] [ref=f1e61]: O
+          - generic [aria-hidden] [ref=f1e64]: M
+          - generic [aria-hidden] [ref=f1e67]: M
+          - generic [aria-hidden] [ref=f1e70]: I
+          - generic [aria-hidden] [ref=f1e73]: S
+          - generic [aria-hidden] [ref=f1e76]: S
+          - generic [aria-hidden] [ref=f1e79]: I
+          - generic [aria-hidden] [ref=f1e82]: O
+          - generic [aria-hidden] [ref=f1e85]: "N"
+    - generic [ref=f1e87]:
+      - generic [ref=f1e88]:
+        - group "1 / 4" [ref=f1e89]:
+          - heading "로케이션 지원작품" [level=2] [ref=f1e90]
+          - generic [ref=f1e91]:
+            - term [ref=f1e92]: 2025.12.31 기준
+            - definition [ref=f1e93]: 2024편
+        - group "2 / 4" [ref=f1e94]:
+          - heading "로케이션 지원일수" [level=2] [ref=f1e95]
+          - definition [ref=f1e97]: 8926일
+        - group "3 / 4" [ref=f1e98]:
+          - heading "로케이션 인센티브 지원작품" [level=2] [ref=f1e99]
+          - definition [ref=f1e101]: 157편
+        - group "4 / 4" [ref=f1e102]:
+          - heading "부산 영화·영상 제작지원 작품" [level=2] [ref=f1e103]
+          - definition [ref=f1e105]: 142편
+      - generic [ref=f1e106]:
+        - button "Previous slide" [disabled] [ref=f1e107] [cursor=pointer]:
+          - img "up icon" [ref=f1e108]
+        - button "Next slide" [ref=f1e109] [cursor=pointer]:
+          - img "down icon" [ref=f1e110]
+  - generic [ref=f1e112]:
+    - generic [ref=f1e113]:
+      - generic [ref=f1e114]:
+        - heading "01 알림마당" [level=2] [ref=f1e115]:
+          - generic [ref=f1e116]: "01"
+          - text: 알림마당
+        - paragraph [ref=f1e117]: 부산영상위원회의 새로운 소식을 알려드립니다.
+      - generic [ref=f1e118]:
+        - generic [ref=f1e119]:
+          - list [ref=f1e120]:
+            - listitem [ref=f1e121] [cursor=pointer]:
+              - generic [ref=f1e122]: 전체 소식
+            - listitem [ref=f1e123] [cursor=pointer]:
+              - generic [ref=f1e124]: 공지사항
+            - listitem [ref=f1e125] [cursor=pointer]:
+              - generic [ref=f1e126]: 지원사업
+            - listitem [ref=f1e127] [cursor=pointer]:
+              - generic [ref=f1e128]: 보도자료
+          - img "더보기" [ref=f1e131] [cursor=pointer]
+        - generic [ref=f1e132]:
+          - button "Previous slide" [ref=f1e133] [cursor=pointer]:
+            - img "left button" [ref=f1e134]
+          - button "Next slide" [ref=f1e135] [cursor=pointer]:
+            - img "right button" [ref=f1e136]
+      - generic [ref=f1e139]:
+        - generic [ref=f1e140]:
+          - generic [ref=f1e141]: 보도자료
+          - heading "축제의 열기를 산업의 기회로…부산영상위원회 10월 국제행사 라인업 공개" [level=2] [ref=f1e142]
+          - paragraph [ref=f1e143]: 축제의 열기를 산업의 기회로…부산영상위원회, 10월 국제행사 라인업 공개 10월 10일(토) ~13일(화), 2026 ACFM 공동부스 운영 글로벌 영화산업 주요 현안을 다루는 포럼 2건 개최 부산아시아영화학교, 12개국 17편 장편 프로젝트 첫선 □ 부산영상위원회(운영위원장 강성규)가 오는 10월 10일(토)부터 13일(화)까지 나흘간 부산 벡스코 제2전시장에서 열리는 부산국제영화제 공식 마켓인 ‘2026 아시아콘텐츠&필름마켓(Asian Contents & Film Market, 이하 ACFM)’에 참가해 공동부스를 중심으로 국내외 영화·영상산업 관계자 간 비즈니스와 네트워킹을 확대한다.□ 부산영상위원회는 아시아영상위원회네트워크(AFCNet), 부산아시아영화학교(AFiS), 영상산업센터(BVIC)와 함께 부산영상위원회 공동부스(#D6D9)를 운영한다. 부스에서는 부산과 아시아 각국의 영화·영상 산업 정보와 최신 동향을 공유하고, 국내외 영화인 간 실질적인 비즈니스와 교류를 지원한다
+          - paragraph [ref=f1e144]: 2026.09.07
+          - img "arrow icon" [ref=f1e146]
+          - generic [ref=f1e147] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e148]:
+          - generic [ref=f1e149]: 교육
+          - heading "부산아시아영화학교 2026 부산지역 영화·영상 전문인력 양성 교육 [영화음악 제작워크숍] 과정 수강생 모집 공고" [level=2] [ref=f1e150]
+          - paragraph [ref=f1e151]: ※ 해당 과정은 부산아시아영화학교 AFiS아카데미 홈페이지(academy.afis.ac) 오프라인강좌 내, 부산영화인교육 페이지를 통한 온라인 신청을 진행하여 주시기 바랍니다.
+          - paragraph [ref=f1e152]: 2026.09.03
+          - img "arrow icon" [ref=f1e154]
+          - generic [ref=f1e155] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e156]:
+          - generic [ref=f1e157]: 교육
+          - heading "2026 부산아시아영화학교-한국문학번역원 협력 부산지역 영화자막번역 지원사업 공고" [level=2] [ref=f1e158]
+          - paragraph [ref=f1e159]: "2026 부산아시아영화학교한국문학번역원 협력 부산지역 영화자막번역 지원사업 공고 부산영상위원회가 운영 중인 부산아시아영화학교 한국문학번역원과의 협력을 통해, 부산지역에서 활동 중인 영화인, 영화학과 학생들이 제작한 장편영화들에 대한 외국어 자막번역을 아래와 같이 지원하고자 합니다. 많은 관심과 신청을 부탁드립니다.※ 본 사업은 한국문학번역원의 지원으로 진행되며, 한국문학번역원과의 협의 후, 선정작이 결정됨을 알려드립니다. ▶ 주관: 부산영상위원회, 부산아시아영화학교▶ 협력: 한국문학번역원▶ 지원대상: 부산지역 장편영화 (★ 후반작업(편집 및 사운드 믹싱)이 완료된 작품에 한함)▶ 신청자격: 아래 중 1에 해당하는 경우, 신청 가능 ① 공고일 이전 사업자등록증의 본사 사업장소재지가 부산으로 되어 있는 제작사 (사업자등록증 내 영상물 제작 관련 종목이 있어야 함) ② 공고일 이전 부산에 거주하고 있는 제작사 대표 또는 감독 ③ 공고일 이전 부산지역 대학교 재학생 및 졸업생▶ 지원"
+          - paragraph [ref=f1e160]: 2026.09.02
+          - img "arrow icon" [ref=f1e162]
+          - generic [ref=f1e163] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e164]:
+          - generic [ref=f1e165]: 채용
+          - heading "부산영상위원회-직원 채용 공고" [level=2] [ref=f1e166]
+          - paragraph [ref=f1e167]: "[사단법인 부산영상위원회 채용공고 제2026006] 부산영상위원회직원 채용 공고 (사)부산영상위원회는 국내 최초의 영화촬영 지원 전담기구로서 국내외 영화촬영·제작지원 및 영상산업 발전을 목적으로 사업을 추진하고 있는 기관입니다. 부산영상위원회에서는 함께 근무할 진취적이고 역량있는 인재를 모집하오니 많은 관심과 지원바랍니다. 1 채용분야 및 자격요건 채용부문 채용 인원 계약 기간 담당업무 자격요건 필수사항 우대사항 전산 정보 1명 2026.10.01.~ (정규직) 전산 시스템 유지 관리 전산 네트워크 유지 관리 개인정보보호 관리 전산 정보 유지 관리 경력자 (3년 이상) 정보처리기사,정보보안기사 네트워크관리사, 리눅스마스터 등 자격 보유 2 지원자격 ○ 채용부문별 지원 자격 채용부문 지원 자격 공통 ・오피스 프로그램(한글, 엑셀, 파"
+          - paragraph [ref=f1e168]: 2026.09.01
+          - img "arrow icon" [ref=f1e170]
+          - generic [ref=f1e171] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e172]:
+          - generic [ref=f1e173]: 보도자료
+          - heading "부산영상위원회, 한-아세안 영화협력 새 장 연다…‘FLY PLUS’ 출범!" [level=2] [ref=f1e174]
+          - paragraph [ref=f1e175]: "부산영상위원회, 한아세안 영화협력새 장 연다…'FLY PLUS' 출범! 11년간 FLY 운영 성과 잇는 후속 협력사업 본격화 3년간 279만 달러 한아세안 협력기금 확보 국제공동제작 프로젝트 개발 FLY Creative Lab첫 참가 프로젝트 공모 진행 □ 부산영상위원회(운영위원장 강성규)가 한국과 아세안(동남아시아국가연합, ASEAN) 영화 협력을 한 단계 확장할 ‘20262028 한ASEAN 영화공동체 프로그램: FLY PLUS(이하 FLY PLUS)’를 본격 출범한다. ○ FLY PLUS는 부산광역시와 부산영상위원회가 공동 주최·주관하고, 한아세안 협력기금(ASEANKorea Cooperation Fund, AKCF)의 지원을 받아 3년간 총 279만 달러(한화 약 39억 원) 규모로 운영된다. ○ 기존 인재 양성 중심의 협력을 넘어 국제공동제작과 산업 네트워크 구축까지 아우르는 한아세안 대표 영화 협력 플랫폼으로 확대 추진될 예정이다.□ 부산영상위원회는 지난 2012년부터"
+          - paragraph [ref=f1e176]: 2026.08.26
+          - img "arrow icon" [ref=f1e178]
+          - generic [ref=f1e179] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e180]:
+          - generic [ref=f1e181]: 사업
+          - heading "2026 BFC 스토리 IP 공모전 본심 진출작 공고" [level=2] [ref=f1e182]
+          - paragraph
+          - paragraph [ref=f1e183]: 2026.08.21
+          - img "arrow icon" [ref=f1e185]
+          - generic [ref=f1e186] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e187]:
+          - generic [ref=f1e188]: 보도자료
+          - heading "부산영상위원회 신임 운영위원장 공개 모집" [level=2] [ref=f1e189]
+          - paragraph [ref=f1e190]: 부산영상위원회 신임 운영위원장 공개 모집 9월 1일까지 접수…임기 2년·재위촉 가능□ 부산영상위원회가 부산 영화·영상산업의 미래를 이끌 전문성과 리더십을 갖춘 운영위원장을 공개 모집한다.□ 이번 공모는 오는 10월 강성규 현 운영위원장의 임기가 만료됨에 따라 차기 운영위원장을 선임하기 위해 추진된다. 임기는 위촉일로부터 2년이며, 재위촉할 수 있다. ○ 운영위원장은 부산영상위원회의 업무를 총괄하며 △부산 영화‧영상산업 발전을 위한 중‧장기 계획 수립 △영화‧영상물 제작 및 촬영유치‧지원 등 영화영상산업 진흥 및 지원 △지역사회, 유관기관, 국내외 영화‧영상 관계자 네트워크 구축 △영화·영상산업 관련 기업 유치 발굴 등 사무처 운영 전반을 책임진다.□ 지원 자격은 △급변하는 영상산업 트렌드에 대응할 수 있는 능력과 관련 분야의 풍부한 경험을 갖춘 자 △국내·외 영화·영상산업 종사자와의 폭넓은 소통과 협력으로 ‘글로벌 영화·영상 비즈니스 도시 부산’을 선도할 수 있는 역량을 보유한 자
+          - paragraph [ref=f1e191]: 2026.08.19
+          - img "arrow icon" [ref=f1e193]
+          - generic [ref=f1e194] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e195]:
+          - generic [ref=f1e196]: 교육
+          - heading "(재공지) 2026 부산지역 영화·영상 전문인력 양성 교육 [영화/드라마 기획·제작 ③] 과정 수강생 모집 기간 연장 안내" [level=2] [ref=f1e197]
+          - paragraph [ref=f1e198]: 2026 부산지역 영화·영상 전문인력 양성과정 [영화/드라마 기획·제작 ③] 교육생 모집 마감일이 연장되었음을 안내드립니다. * 기존 8월 18일(화) → 변경일 8월 20일(목)※ 해당 과정은 부산아시아영화학교 AFiS아카데미 홈페이지(academy.afis.ac) 오프라인강좌 내, 부산영화인교육 페이지를 통한 온라인 신청을 진행하여 주시기 바랍니다. ※
+          - paragraph [ref=f1e199]: 2026.08.18
+          - img "arrow icon" [ref=f1e201]
+          - generic [ref=f1e202] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e203]:
+          - generic [ref=f1e204]: 보도자료
+          - heading "부산영상위원회, AI 창작자 양성 첫 결실… AI 단편영화 12편 완성" [level=2] [ref=f1e205]
+          - paragraph [ref=f1e206]: 부산영상위원회, AI 창작자 양성 첫 결실…AI 단편영화 12편 완성 올해 첫 운영한 AI 아티스트 양성 사업(전문가 과정) 성료 전문가 밀착 멘토링으로 실무형 AI 창작 역량 강화 참가자 전원 교육 수료…AI 단편영화 제작·상영 □ 부산영상위원회(운영위원장 강성규)가 올해 처음 추진한 ‘AI 아티스트 양성 사업(전문가 과정)’을 성공적으로 마무리했다. ○ 지난 26일(일) 영상산업센터 11층 시사실에서 열린 작품 상영회에서는 5주간의 교육 과정을 통해 완성된 AI 단편영화 12편이 처음 공개됐다.□ ‘AI 아티스트 양성사업(전문가 과정)’은 부산 지역 AI 기반 실무형 창작자 양성을 위해 올해 새롭게 운영한 ‘AI 창작자 교육 사업’의 핵심 과정이다. ○ 이번 과정에 참여한 12명의 교육생은 단순한 AI 활용법 습득을 넘어, 각자의 시나리오를 바탕으로 기획과 연출 전 과정을 수행하며 자신만의 AI 단편영화 1편씩을 완성했다. ○ 교육은 MBC C&I 이상욱 팀장이 총괄을 맡았으며
+          - paragraph [ref=f1e207]: 2026.07.28
+          - img "arrow icon" [ref=f1e209]
+          - generic [ref=f1e210] [cursor=pointer]: 자세히보기
+        - generic [ref=f1e211]:
+          - generic [ref=f1e212]: 보도자료
+          - heading "부산영상위원회, 상반기 촬영지원 결산 발표…지역 소비 17억 원 창출" [level=2] [ref=f1e213]
+          - paragraph [ref=f1e214]: 부산영상위원회, 상반기 촬영지원결산 발표…지역 소비 17억 원 창출 부산 상반기 촬영 39편…영화 늘고 OTT 줄었다 스튜디오 대여일수 전년 대비 50.82% 증가 기장군, 인센티브 힘입어 상반기 촬영일수 부산 1위 부산 랜드마크 광안리해수욕장·광안대교 촬영 인기 하반기 대형 프로젝트 촬영 본격화 전망□ 부산영상위원회(운영위원장 강성규)가 2026년도 상반기 촬영지원 결산을 발표했다. □ 올해 상반기 부산에서는 총 39편(영화 7편, 영상물 32편)의 작품이 촬영됐으며, 촬영일수는 156일(영화 79일, 영상물 77일)을 기록했다. 작품 편수는 지난해 상반기 39편(영화 6편, 영상물 33편)과 같았으나, 전체 촬영일수는 187일(영화 51일, 영상물 136일)에서 156일로 16.58%(31일) 감소했다. ○ 작품 유형별로 살펴보면 장편영화 촬영은 오히려 증가했다. 올해 상반기 장편영화는 전년보다 1편 늘어난 7편이 촬영됐으며, 부산 올로케이션 작품이 포함되면서 영화 촬영일수는 지
+          - paragraph [ref=f1e215]: 2026.07.08
+          - img "arrow icon" [ref=f1e217]
+          - generic [ref=f1e218] [cursor=pointer]: 자세히보기
+    - generic [ref=f1e219]:
+      - generic [ref=f1e220]:
+        - button "Previous slide" [ref=f1e221] [cursor=pointer]:
+          - img "left icon" [ref=f1e222]
+        - button "Next slide" [ref=f1e223] [cursor=pointer]:
+          - img "right icon" [ref=f1e224]
+      - generic [ref=f1e227]:
+        - group "1 / 2" [ref=f1e228]:
+          - img "banner2" [ref=f1e229]
+          - link "자세히보기" [ref=f1e230] [cursor=pointer]:
+            - /url: https://www.bfc.or.kr/ko/ntf/NTFV?bbs_id=NTF_010000&_menuNo=56&ntc_id=10720
+        - group "2 / 2" [ref=f1e231]:
+          - img "banner1" [ref=f1e232]
+          - link "자세히보기" [ref=f1e233] [cursor=pointer]:
+            - /url: https://www.bfc.or.kr/ko/ntf/NTFV?bbs_id=NTF_010000&_menuNo=56&ntc_id=10748
+  - generic [ref=f1e234]:
+    - generic [ref=f1e235]: BUSAN FILM COMMISSION
+    - generic [ref=f1e236]: BUSAN FILM COMMISSION
+    - generic [ref=f1e237]: BUSAN FILM COMMISSION
+    - generic [ref=f1e238]: BUSAN FILM COMMISSION
+  - generic [ref=f1e240]:
+    - generic [ref=f1e241]:
+      - heading "02 주요 사업" [level=2] [ref=f1e242]:
+        - generic [ref=f1e243]: "02"
+        - text: 주요 사업
+      - paragraph [ref=f1e244]: 부산 영화·영상 생태계를 만들어가는 부산영상위원회의 주요 사업을 알려드립니다.
+    - generic [ref=f1e245]:
+      - generic [ref=f1e246]:
+        - heading "로케이션 지원" [level=2] [ref=f1e247]
+        - paragraph [ref=f1e248]:
+          - generic [ref=f1e249]: 국내·외 장편극영화 및 영상물 제작에 대해
+          - text: 촬영 장소 추천과 선정, 촬영 협의 및 인·허가 절차 등을 지원합니다.
+        - img "로케이션지원바로가기" [ref=f1e251]
+        - generic [ref=f1e252] [cursor=pointer]: 바로가기
+      - generic [ref=f1e253]:
+        - heading "기획·개발 제작지원" [level=2] [ref=f1e254]
+        - paragraph [ref=f1e255]: 부산 소재 제작사의 다양한 촬영물의 기획·제작을 지원합니다.
+        - img "기획·개발 제작지원바로가기" [ref=f1e257]
+        - generic [ref=f1e258] [cursor=pointer]: 바로가기
+      - generic [ref=f1e259]:
+        - heading "프로덕션 지원" [level=2] [ref=f1e260]
+        - paragraph [ref=f1e261]: 부산촬영을 진행하는 촬영 제작팀에게 프로덕션 지원사업을 실시합니다.
+        - img "프로덕션 지원바로가기" [ref=f1e263]
+        - generic [ref=f1e264] [cursor=pointer]: 바로가기
+      - generic [ref=f1e265]:
+        - heading "후반작업 지원" [level=2] [ref=f1e266]
+        - paragraph [ref=f1e267]: 믹싱, 색보정 등 후반작업에 필요한 최신 시설과 전문 인력을 지원합니다.
+        - img "후반작업지원바로가기" [ref=f1e269]
+        - generic [ref=f1e270] [cursor=pointer]: 바로가기
+      - generic [ref=f1e271]:
+        - heading "부산 영화·영상인력 DB" [level=2] [ref=f1e272]
+        - paragraph [ref=f1e273]: BMDB는 부산지역에서 활동중인 영화·영상인 정보 제공 플랫폼입니다.
+        - img "부산 영화·영상인력 DB 바로가기" [ref=f1e275]
+        - generic [ref=f1e276] [cursor=pointer]: 바로가기
+  - generic [ref=f1e278]:
+    - generic [ref=f1e279]:
+      - generic [ref=f1e280]:
+        - heading "03 로케이션" [level=2] [ref=f1e281]:
+          - generic [ref=f1e282]: "03"
+          - text: 로케이션
+        - paragraph [ref=f1e283]: 부산영상위원회는 로케이션 지원사업을 통해 촬영 장소 추천 및 사진 동영상 자료를 제공하며, 공공시설물 촬영·답사시 필요한 인허가 절차등을 지원합니다.
+      - generic [ref=f1e285] [cursor=pointer]:
+        - text: 로케이션 검색 바로가기
+        - img "로케이션 검색 바로가기" [ref=f1e288]
+    - generic [ref=f1e289]:
+      - generic [ref=f1e290]:
+        - generic [ref=f1e291]:
+          - img "신규장소 바로기기" [ref=f1e293]
+          - heading "신규 장소" [level=2] [ref=f1e294]
+          - paragraph [ref=f1e295]: 부산 16개 구·군의 새로운 장소를 안내합니다.
+          - generic [ref=f1e296] [cursor=pointer]: 바로가기
+        - generic [ref=f1e297]:
+          - img "드론영상 바로가기" [ref=f1e299]
+          - heading "드론 영상" [level=2] [ref=f1e300]
+          - paragraph [ref=f1e301]: 드론 영상을 통해 촬영장소를 생생하게 전달합니다.
+          - generic [ref=f1e302] [cursor=pointer]: 바로가기
+        - generic [ref=f1e303]:
+          - img "캠코 바로가기" [ref=f1e305]
+          - heading "국유재산포털" [level=2] [ref=f1e306]
+          - paragraph [ref=f1e307]: 캠코 국유재산포털에서 촬영 가능한 장소를 확인하세요.
+          - generic [ref=f1e308] [cursor=pointer]: 바로가기
+        - generic [ref=f1e309]:
+          - heading [level=2] [ref=f1e310]:
+            - strong [ref=f1e311]: 로케이션 지원신청
+            - text: 바로가기
+          - img "로케이션지원신청 바로가기" [ref=f1e313]
+          - generic [ref=f1e314] [cursor=pointer]: 바로가기
+      - generic [ref=f1e315] [cursor=pointer]:
+        - img "천마산 복합전망대" [ref=f1e316]
+        - generic [ref=f1e317]:
+          - heading "천마산 복합전망대" [level=2] [ref=f1e318]
+          - paragraph [ref=f1e319]: 부산 서구 아미천마전망길 170 (남부민동, 천마산복합전망)
+          - list [ref=f1e320]:
+            - listitem [ref=f1e321]: "#남항대교뷰"
+            - listitem [ref=f1e322]: "#도시야경"
+            - listitem [ref=f1e323]: "#도시전경"
+            - listitem [ref=f1e324]: "#부산전망대"
+            - listitem [ref=f1e325]: "#부산항대교뷰"
+            - listitem [ref=f1e326]: "#영도뷰"
+            - listitem [ref=f1e327]: "#천마산전망대"
+            - listitem [ref=f1e328]: "#파노라마뷰"
+      - generic [ref=f1e329] [cursor=pointer]:
+        - img "구) 송강중공업 폐창고(동삼동)" [ref=f1e330]
+        - generic [ref=f1e331]:
+          - heading "구) 송강중공업 폐창고(동삼동)" [level=2] [ref=f1e332]
+          - paragraph [ref=f1e333]: 부산 영도구 해양로 207 (동삼동, (주) 송강중공업)
+          - list [ref=f1e334]:
+            - listitem [ref=f1e335]: "#부산폐공간"
+            - listitem [ref=f1e336]: "#빈공간"
+            - listitem [ref=f1e337]: "#세트같은공간"
+            - listitem [ref=f1e338]: "#송강중공업"
+            - listitem [ref=f1e339]: "#영도"
+            - listitem [ref=f1e340]: "#폐창고"
+      - generic [ref=f1e341] [cursor=pointer]:
+        - img "봉래나루로" [ref=f1e342]
+        - generic [ref=f1e343]:
+          - heading "봉래나루로" [level=2] [ref=f1e344]
+          - paragraph [ref=f1e345]: 부산 영도구 봉래나루로 178 (봉래동2가)
+          - list [ref=f1e346]:
+            - listitem [ref=f1e347]: "#도로"
+            - listitem [ref=f1e348]: "#바다"
+            - listitem [ref=f1e349]: "#봉래동"
+            - listitem [ref=f1e350]: "#봉래동 물양장"
+            - listitem [ref=f1e351]: "#부두"
+            - listitem [ref=f1e352]: "#선착장"
+            - listitem [ref=f1e353]: "#영도"
+      - generic [ref=f1e354] [cursor=pointer]:
+        - img "낙동아트센터" [ref=f1e355]
+        - generic [ref=f1e356]:
+          - heading "낙동아트센터" [level=2] [ref=f1e357]
+          - paragraph [ref=f1e358]: 부산 강서구 명지국제1로 141 (명지동)
+          - list [ref=f1e359]:
+            - listitem [ref=f1e360]: "#강서구"
+            - listitem [ref=f1e361]: "#공연장"
+            - listitem [ref=f1e362]: "#공연홀"
+            - listitem [ref=f1e363]: "#깔끔한공간"
+            - listitem [ref=f1e364]: "#대형무대"
+            - listitem [ref=f1e365]: "#문화시설"
+            - listitem [ref=f1e366]: "#뮤지컬"
+            - listitem [ref=f1e367]: "#복합문화공간"
+            - listitem [ref=f1e368]: "#오케스트라"
+            - listitem [ref=f1e369]: "#콘서트홀"
+            - listitem [ref=f1e370]: "#클래식"
+            - listitem [ref=f1e371]: "#현대적공간"
+      - generic [ref=f1e372] [cursor=pointer]:
+        - img "삼락생태공원" [ref=f1e373]
+        - generic [ref=f1e374]:
+          - heading "삼락생태공원" [level=2] [ref=f1e375]
+          - paragraph [ref=f1e376]: 부산 사상구 삼락동 686
+          - list [ref=f1e377]:
+            - listitem [ref=f1e378]: "#광활한풍경"
+            - listitem [ref=f1e379]: "#낙동강뷰"
+            - listitem [ref=f1e380]: "#노을맛집"
+            - listitem [ref=f1e381]: "#도심속자연"
+            - listitem [ref=f1e382]: "#부산감성"
+            - listitem [ref=f1e383]: "#부산공원"
+            - listitem [ref=f1e384]: "#부산피크닉"
+            - listitem [ref=f1e385]: "#자연사진"
+            - listitem [ref=f1e386]: "#자연힐링"
+  - generic [ref=f1e387]:
+    - generic [ref=f1e389]:
+      - generic [ref=f1e390]:
+        - heading "04 추천지원작" [level=2] [ref=f1e391]:
+          - generic [ref=f1e392]: "04"
+          - text: 추천지원작
+        - paragraph [ref=f1e393]: 부산영상위원회가 촬영 지원한 부산촬영작을 소개합니다.
+      - link [ref=f1e395] [cursor=pointer]:
+        - /url: https://www.bfc.or.kr/NcPageLink?link=ko/rqe/RQE040100&_menuNo=23
+        - text: 추천지원작 더보기
+        - img "바로가기 아이콘" [ref=f1e398]
+    - generic [ref=f1e402]:
+      - generic [ref=f1e405] [cursor=pointer]:
+        - heading [level=2] [ref=f1e406]: 로또 1등도 출근합니다
+        - list [ref=f1e407]:
+          - listitem [ref=f1e408]:
+            - generic [ref=f1e409]: 제 작 사
+            - generic [ref=f1e410]: 본팩토리
+          - listitem [ref=f1e411]:
+            - generic [ref=f1e412]: 개봉일자
+            - generic [ref=f1e413]: 2026-09-10
+          - listitem [ref=f1e414]:
+            - generic [ref=f1e415]: 장 르
+            - generic [ref=f1e416]: 판타지
+          - listitem [ref=f1e417]:
+            - generic [ref=f1e418]: 감 독
+            - generic [ref=f1e419]: 윤영빈
+          - listitem [ref=f1e420]:
+            - generic [ref=f1e421]: 출 연
+            - generic [ref=f1e422]: 이준혁
+      - generic [ref=f1e425] [cursor=pointer]:
+        - heading [level=2] [ref=f1e426]: 유부녀 킬러
+        - list [ref=f1e427]:
+          - listitem [ref=f1e428]:
+            - generic [ref=f1e429]: 제 작 사
+            - generic [ref=f1e430]: 본팩토리
+          - listitem [ref=f1e431]:
+            - generic [ref=f1e432]: 개봉일자
+            - generic [ref=f1e433]: 2026-07-31
+          - listitem [ref=f1e434]:
+            - generic [ref=f1e435]: 장 르
+            - generic [ref=f1e436]: 액션, 스릴러, 드라마
+          - listitem [ref=f1e437]:
+            - generic [ref=f1e438]: 감 독
+            - generic [ref=f1e439]: 윤종호
+          - listitem [ref=f1e440]:
+            - generic [ref=f1e441]: 출 연
+            - generic [ref=f1e442]: 정준원, 공효진, 이상이
+      - generic [ref=f1e445] [cursor=pointer]:
+        - heading [level=2] [ref=f1e446]: 오케이 마담2
+        - list [ref=f1e447]:
+          - listitem [ref=f1e448]:
+            - generic [ref=f1e449]: 제 작 사
+            - generic [ref=f1e450]: 올픽처스 주식회사
+          - listitem [ref=f1e451]:
+            - generic [ref=f1e452]: 개봉일자
+            - generic [ref=f1e453]: 2026-08-12
+          - listitem [ref=f1e454]:
+            - generic [ref=f1e455]: 장 르
+            - generic [ref=f1e456]: 액션, 코미디
+          - listitem [ref=f1e457]:
+            - generic [ref=f1e458]: 감 독
+            - generic [ref=f1e459]: 이철하
+          - listitem [ref=f1e460]:
+            - generic [ref=f1e461]: 출 연
+            - generic [ref=f1e462]: 엄정화, 박성웅, 배정남
+      - generic [ref=f1e463] [cursor=pointer]:
+        - img "97 혜자, 표류기" [ref=f1e464]
+        - generic [ref=f1e465]:
+          - heading "97 혜자, 표류기" [level=2] [ref=f1e466]
+          - list [ref=f1e467]:
+            - listitem [ref=f1e468]:
+              - generic [ref=f1e469]: 제 작 사
+              - generic [ref=f1e470]: 후앤유아츠(주)
+            - listitem [ref=f1e471]:
+              - generic [ref=f1e472]: 개봉일자
+              - generic [ref=f1e473]: 2026-09-09
+            - listitem [ref=f1e474]:
+              - generic [ref=f1e475]: 장 르
+              - generic [ref=f1e476]: 휴먼드라마
+            - listitem [ref=f1e477]:
+              - generic [ref=f1e478]: 감 독
+              - generic [ref=f1e479]: 정기혁
+            - listitem [ref=f1e480]:
+              - generic [ref=f1e481]: 출 연
+              - generic [ref=f1e482]: 정은지, 김미라
+      - generic [ref=f1e485] [cursor=pointer]:
+        - heading [level=2] [ref=f1e486]: 로또 1등도 출근합니다
+        - list [ref=f1e487]:
+          - listitem [ref=f1e488]:
+            - generic [ref=f1e489]: 제 작 사
+            - generic [ref=f1e490]: 본팩토리
+          - listitem [ref=f1e491]:
+            - generic [ref=f1e492]: 개봉일자
+            - generic [ref=f1e493]: 2026-09-10
+          - listitem [ref=f1e494]:
+            - generic [ref=f1e495]: 장 르
+            - generic [ref=f1e496]: 판타지
+          - listitem [ref=f1e497]:
+            - generic [ref=f1e498]: 감 독
+            - generic [ref=f1e499]: 윤영빈
+          - listitem [ref=f1e500]:
+            - generic [ref=f1e501]: 출 연
+            - generic [ref=f1e502]: 이준혁
+      - generic [ref=f1e505] [cursor=pointer]:
+        - heading [level=2] [ref=f1e506]: 유부녀 킬러
+        - list [ref=f1e507]:
+          - listitem [ref=f1e508]:
+            - generic [ref=f1e509]: 제 작 사
+            - generic [ref=f1e510]: 본팩토리
+          - listitem [ref=f1e511]:
+            - generic [ref=f1e512]: 개봉일자
+            - generic [ref=f1e513]: 2026-07-31
+          - listitem [ref=f1e514]:
+            - generic [ref=f1e515]: 장 르
+            - generic [ref=f1e516]: 액션, 스릴러, 드라마
+          - listitem [ref=f1e517]:
+            - generic [ref=f1e518]: 감 독
+            - generic [ref=f1e519]: 윤종호
+          - listitem [ref=f1e520]:
+            - generic [ref=f1e521]: 출 연
+            - generic [ref=f1e522]: 정준원, 공효진, 이상이
+      - generic [ref=f1e525] [cursor=pointer]:
+        - heading [level=2] [ref=f1e526]: 오케이 마담2
+        - list [ref=f1e527]:
+          - listitem [ref=f1e528]:
+            - generic [ref=f1e529]: 제 작 사
+            - generic [ref=f1e530]: 올픽처스 주식회사
+          - listitem [ref=f1e531]:
+            - generic [ref=f1e532]: 개봉일자
+            - generic [ref=f1e533]: 2026-08-12
+          - listitem [ref=f1e534]:
+            - generic [ref=f1e535]: 장 르
+            - generic [ref=f1e536]: 액션, 코미디
+          - listitem [ref=f1e537]:
+            - generic [ref=f1e538]: 감 독
+            - generic [ref=f1e539]: 이철하
+          - listitem [ref=f1e540]:
+            - generic [ref=f1e541]: 출 연
+            - generic [ref=f1e542]: 엄정화, 박성웅, 배정남
+      - generic [ref=f1e545] [cursor=pointer]:
+        - heading [level=2] [ref=f1e546]: 97 혜자, 표류기
+        - list [ref=f1e547]:
+          - listitem [ref=f1e548]:
+            - generic [ref=f1e549]: 제 작 사
+            - generic [ref=f1e550]: 후앤유아츠(주)
+          - listitem [ref=f1e551]:
+            - generic [ref=f1e552]: 개봉일자
+            - generic [ref=f1e553]: 2026-09-09
+          - listitem [ref=f1e554]:
+            - generic [ref=f1e555]: 장 르
+            - generic [ref=f1e556]: 휴먼드라마
+          - listitem [ref=f1e557]:
+            - generic [ref=f1e558]: 감 독
+            - generic [ref=f1e559]: 정기혁
+          - listitem [ref=f1e560]:
+            - generic [ref=f1e561]: 출 연
+            - generic [ref=f1e562]: 정은지, 김미라
+      - generic [ref=f1e565] [cursor=pointer]:
+        - heading [level=2] [ref=f1e566]: 로또 1등도 출근합니다
+        - list [ref=f1e567]:
+          - listitem [ref=f1e568]:
+            - generic [ref=f1e569]: 제 작 사
+            - generic [ref=f1e570]: 본팩토리
+          - listitem [ref=f1e571]:
+            - generic [ref=f1e572]: 개봉일자
+            - generic [ref=f1e573]: 2026-09-10
+          - listitem [ref=f1e574]:
+            - generic [ref=f1e575]: 장 르
+            - generic [ref=f1e576]: 판타지
+          - listitem [ref=f1e577]:
+            - generic [ref=f1e578]: 감 독
+            - generic [ref=f1e579]: 윤영빈
+          - listitem [ref=f1e580]:
+            - generic [ref=f1e581]: 출 연
+            - generic [ref=f1e582]: 이준혁
+  - generic [ref=f1e592]:
+    - generic [ref=f1e593]:
+      - generic [ref=f1e594]:
+        - heading "05 소셜 미디어" [level=2] [ref=f1e595]:
+          - generic [ref=f1e596]: "05"
+          - text: 소셜 미디어
+        - paragraph [ref=f1e597]: 부산영상위원회 SNS의 다양한 콘텐츠를 만나보세요.
+      - list [ref=f1e598]:
+        - listitem [ref=f1e599]: "#부산영상위원회"
+        - listitem [ref=f1e600]: "#BusanFilmCommission"
+        - listitem [ref=f1e601]: "#BFC"
+        - listitem [ref=f1e602]: "#부산로케이션"
+        - listitem [ref=f1e603]: "#부산촬영"
+        - listitem [ref=f1e604]: "#부산촬영지"
+        - listitem [ref=f1e605]: "#부케이션"
+        - listitem [ref=f1e606]: "#촬영장소추천"
+        - listitem [ref=f1e607]: "#부산로케이션지원작"
+        - listitem [ref=f1e608]: "#드라마추천"
+        - listitem [ref=f1e609]: "#OTT콘텐츠"
+        - listitem [ref=f1e610]: "#영화촬영지"
+        - listitem [ref=f1e611]: "#부산영상후반작업시설"
+        - listitem [ref=f1e612]: "#후반작업기술지원"
+        - listitem [ref=f1e613]: "#유통배급지원"
+    - generic [ref=f1e614]:
+      - generic [ref=f1e615]:
+        - img "소셜미디어 이미지1" [ref=f1e616]
+        - link "자세히보기" [ref=f1e617] [cursor=pointer]:
+          - /url: https://www.instagram.com/reel/DL6OY69tG4J/?igsh=MXBudHh5anRmMmpzdA==
+      - generic [ref=f1e618]:
+        - img "소셜미디어 이미지2" [ref=f1e619]
+        - link "자세히보기" [ref=f1e620] [cursor=pointer]:
+          - /url: https://youtu.be/XsIAomhHp0w?si=hStfdn02WR_4y5aK
+      - generic [ref=f1e621]:
+        - img "소셜미디어 이미지3" [ref=f1e622]
+        - link "자세히보기" [ref=f1e623] [cursor=pointer]:
+          - /url: https://www.instagram.com/busan_film_commission/
+      - generic [ref=f1e624]:
+        - img "소셜미디어 이미지4" [ref=f1e625]
+        - link "자세히보기" [ref=f1e626] [cursor=pointer]:
+          - /url: https://www.facebook.com/busanfilmcommission/
+      - generic [ref=f1e627]:
+        - img "소셜미디어 이미지5" [ref=f1e628]
+        - link "자세히보기" [ref=f1e629] [cursor=pointer]:
+          - /url: https://www.youtube.com/@BU_Playlist
+  - generic [ref=f1e630]:
+    - generic [ref=f1e631]: BUSAN FILM COMMISSION
+    - generic [ref=f1e632]: BUSAN FILM COMMISSION
+    - generic [ref=f1e633]: BUSAN FILM COMMISSION
+    - generic [ref=f1e634]: BUSAN FILM COMMISSION
+  - generic [ref=f1e635]:
+    - paragraph [ref=f1e637]:
+      - generic [ref=f1e638]: 영화 하기 좋은 도시, 영상 하기 좋은 도시 부산을 구축하며
+      - strong [ref=f1e639]: 글로벌 영화·영상 도시로 도약하겠습니다.
+    - generic [ref=f1e643]:
+      - link [ref=f1e645] [cursor=pointer]:
+        - /url: http://www.afis.ac/
+      - link [ref=f1e648] [cursor=pointer]:
+        - /url: https://bmdb.kr/
+      - link [ref=f1e651] [cursor=pointer]:
+        - /url: https://busanpostlab.kr/
+      - link [ref=f1e654] [cursor=pointer]:
+        - /url: https://location.bfc.or.kr/
+      - link [ref=f1e657] [cursor=pointer]:
+        - /url: https://www.bfc.or.kr/NcPageLink?link=ko/bpl/BPL010100&_menuNo=52
+      - link [ref=f1e660] [cursor=pointer]:
+        - /url: https://www.bvic.kr/
+      - link [ref=f1e663] [cursor=pointer]:
+        - /url: http://www.afis.ac/
+        - img "AFiS" [ref=f1e664]
+      - link [ref=f1e666] [cursor=pointer]:
+        - /url: https://bmdb.kr/
+        - img "BMDB" [ref=f1e667]
+      - link [ref=f1e669] [cursor=pointer]:
+        - /url: https://busanpostlab.kr/
+        - img "부산영상후반작업시설" [ref=f1e670]
+      - link [ref=f1e672] [cursor=pointer]:
+        - /url: https://location.bfc.or.kr/
+      - link [ref=f1e675] [cursor=pointer]:
+        - /url: https://www.bfc.or.kr/NcPageLink?link=ko/bpl/BPL010100&_menuNo=52
+      - link [ref=f1e678] [cursor=pointer]:
+        - /url: https://www.bvic.kr/
+      - link [ref=f1e681] [cursor=pointer]:
+        - /url: http://www.afis.ac/
+      - link [ref=f1e684] [cursor=pointer]:
+        - /url: https://bmdb.kr/
+      - link [ref=f1e687] [cursor=pointer]:
+        - /url: https://busanpostlab.kr/
+      - link [ref=f1e690] [cursor=pointer]:
+        - /url: https://location.bfc.or.kr/
+  - generic [ref=f1e695]:
+    - heading "BFC" [level=3] [ref=f1e696]
+    - heading "NEWS" [level=2] [ref=f1e697]:
+      - generic [aria-hidden] [ref=f1e698]:
+        - generic [aria-hidden] [ref=f1e701]: "N"
+        - generic [aria-hidden] [ref=f1e704]: E
+        - generic [aria-hidden] [ref=f1e707]: W
+        - generic [aria-hidden] [ref=f1e710]: S
+    - generic [ref=f1e711]:
+      - textbox "이메일을 입력해주세요." [ref=f1e712]
+      - button [ref=f1e713] [cursor=pointer]:
+        - img "뉴스레터등록 아이콘" [ref=f1e714]
+    - heading "LETTER" [level=2] [ref=f1e715]:
+      - generic [aria-hidden] [ref=f1e716]:
+        - generic [aria-hidden] [ref=f1e719]: L
+        - generic [aria-hidden] [ref=f1e722]: E
+        - generic [aria-hidden] [ref=f1e725]: T
+        - generic [aria-hidden] [ref=f1e728]: T
+        - generic [aria-hidden] [ref=f1e731]: E
+        - generic [aria-hidden] [ref=f1e734]: R
+    - generic [ref=f1e735]: 뉴스레터 수신을 동의합니다.
+  - contentinfo [ref=f1e738]:
+    - generic [ref=f1e739]:
+      - heading [level=1] [ref=f1e740]:
+        - img "부산영상위원회" [ref=f1e741]
+      - generic [ref=f1e742]:
+        - generic [ref=f1e743]:
+          - list [ref=f1e744]:
+            - listitem [ref=f1e745]:
+              - generic [ref=f1e746]: 주 소
+              - text: 48058 부산광역시 해운대구 센텀서로 39 8층
+            - listitem [ref=f1e747]:
+              - generic [ref=f1e748]: 대표전화
+              - text: 051. 7200. 301
+            - listitem [ref=f1e749]:
+              - generic [ref=f1e750]: 팩 스
+              - text: 051. 7200. 300
+          - paragraph [ref=f1e751]: Copyright© 2025 Busan Film Commission. All rights reserved.
+        - generic [ref=f1e752]:
+          - generic [ref=f1e753]:
+            - list [ref=f1e754]:
+              - listitem [ref=f1e755]:
+                - link "개인정보취급방침" [ref=f1e756] [cursor=pointer]:
+                  - /url: https://www.bfc.or.kr/NcPageLink?link=ko/ply/PLY010000&_menuNo=88
+              - listitem [ref=f1e757]:
+                - link "이메일무단수집거부" [ref=f1e758] [cursor=pointer]:
+                  - /url: https://www.bfc.or.kr/NcPageLink?link=ko/ply/PLY020000&_menuNo=91
+              - listitem [ref=f1e759]:
+                - link [ref=f1e760] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@BFCTVgo
+                  - img "youtube" [ref=f1e761]
+              - listitem [ref=f1e762]:
+                - link [ref=f1e763] [cursor=pointer]:
+                  - /url: https://www.facebook.com/busanfilmcommission/
+                  - img "facebook" [ref=f1e764]
+              - listitem [ref=f1e765]:
+                - link [ref=f1e766] [cursor=pointer]:
+                  - /url: https://www.instagram.com/busan_film_commission/
+                  - img "instagram" [ref=f1e767]
+            - button "Family Site" [ref=f1e769] [cursor=pointer]
+          - link [ref=f1e771] [cursor=pointer]:
+            - /url: javascript:void(0);
+            - img "top icon" [ref=f1e773]
+            - paragraph [ref=f1e774]: TOP

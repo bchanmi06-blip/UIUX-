@@ -110,4 +110,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 5. Section 4 추천지원작 Swiper (세로 슬라이더)
+    const m4SwiperEl = document.querySelector('.m4_swiper');
+    if (m4SwiperEl) {
+        const m4Swiper = new Swiper('.m4_swiper', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            speed: 600,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.m4_pagination',
+                clickable: true,
+            },
+            mousewheel: {
+                forceToAxis: true,
+                releaseOnEdges: true,
+            },
+            observer: true,
+            observeParents: true,
+        });
+
+        // 사용자가 포스터에 마우스를 올렸을 때 자동 재생 일시 정지
+        const posterOn = document.querySelector('.m4_support .poster_on');
+        if (posterOn && m4Swiper.autoplay) {
+            posterOn.addEventListener('mouseenter', () => {
+                m4Swiper.autoplay.stop();
+            });
+            posterOn.addEventListener('mouseleave', () => {
+                m4Swiper.autoplay.start();
+            });
+        }
+
+        // 동작 줄이기 설정 대응
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches && m4Swiper.autoplay) {
+            m4Swiper.autoplay.stop();
+        }
+    }
+
+    // 6. Section 5 소셜 미디어 해시태그 클릭 인터랙션
+    const socialTags = document.querySelectorAll('.m5_tag ul li');
+    socialTags.forEach((tag) => {
+        tag.addEventListener('click', () => {
+            socialTags.forEach(t => t.style.backgroundColor = '');
+            tag.style.backgroundColor = '#e8f2fc';
+            setTimeout(() => {
+                tag.style.backgroundColor = '';
+            }, 800);
+        });
+    });
+
 });
+
